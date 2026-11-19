@@ -1,0 +1,40 @@
+{
+  "id": "ai-2-2",
+  "title": "Different Approaches to AI",
+  "introduction": "AI is a broad field containing approaches that can be used separately or combined.",
+  "content": "lesson-2-2.md",
+  "learningOutcomes": [
+    "Describe rule-based systems, machine learning, deep learning and generative AI.",
+    "Explain how these terms overlap.",
+    "Choose an appropriate description for a simple system."
+  ],
+  "activities": [
+    {
+      "id": "ai-2-2-a1",
+      "type": "ordering",
+      "question": "Put these categories in order from broader field to more specific technique.",
+      "items": [
+        { "id": "deep", "text": "Deep learning" },
+        { "id": "ai", "text": "Artificial intelligence" },
+        { "id": "ml", "text": "Machine learning" }
+      ],
+      "correctOrder": ["ai", "ml", "deep"],
+      "explanation": "Machine learning is an approach within AI, and deep learning is a family of machine-learning techniques."
+    },
+    {
+      "id": "ai-2-2-a2",
+      "type": "multiple-choice",
+      "question": "A support system follows explicit if–then instructions written by an expert. What is the best description?",
+      "options": ["Rule-based system", "Deep neural network", "Generative model", "Artificial general intelligence"],
+      "correctIndex": 0,
+      "explanation": "Rule-based systems apply knowledge encoded as explicit logical rules."
+    },
+    {
+      "id": "ai-2-2-a3",
+      "type": "true-false",
+      "question": "Generative AI and deep learning always mean exactly the same thing.",
+      "correct": false,
+      "explanation": "Many generative systems use deep learning, but deep learning also supports non-generative tasks such as classification."
+    }
+  ]
+}

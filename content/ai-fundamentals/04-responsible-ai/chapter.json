@@ -1,0 +1,9 @@
+{
+  "id": "responsible-ai",
+  "title": "Responsible AI",
+  "description": "Understand AI risks and practise thoughtful, transparent use.",
+  "lessons": [
+    { "id": "ai-4-1", "title": "AI Bias, Privacy and Reliability", "file": "lesson-4-1.json" },
+    { "id": "ai-4-2", "title": "Using AI Effectively and Responsibly", "file": "lesson-4-2.json" }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "schemaVersion": 1,
+  "courses": [
+    {
+      "id": "ai-fundamentals",
+      "manifest": "ai-fundamentals/course.json"
+    }
+  ]
+}

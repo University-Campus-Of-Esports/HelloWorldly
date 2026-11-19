@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "ai-fundamentals",
+  "title": "AI Fundamentals",
+  "description": "A beginner-friendly introduction to artificial intelligence, how it works and how to use it responsibly.",
+  "chapters": [
+    { "id": "what-is-ai", "manifest": "01-what-is-ai/chapter.json" },
+    { "id": "types-of-ai", "manifest": "02-types-of-ai/chapter.json" },
+    { "id": "how-ai-works", "manifest": "03-how-ai-works/chapter.json" },
+    { "id": "responsible-ai", "manifest": "04-responsible-ai/chapter.json" }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "id": "ai-3-2",
+  "title": "Neural Networks and Large Language Models",
+  "introduction": "Neural networks transform inputs through connected layers, while large language models use this approach to predict language tokens.",
+  "content": "lesson-3-2.md",
+  "learningOutcomes": [
+    "Give a simple description of a neural network.",
+    "Explain tokens and next-token prediction.",
+    "Identify important limitations of generated content."
+  ],
+  "activities": [
+    {
+      "id": "ai-3-2-a1",
+      "type": "multiple-choice",
+      "question": "What is a token in a large language model?",
+      "options": [
+        "A unit of text processed by the model",
+        "A guarantee that a statement is true",
+        "A complete database record",
+        "A physical part of the computer"
+      ],
+      "correctIndex": 0,
+      "explanation": "Text is divided into tokens, which may be words, parts of words, punctuation or other text units."
+    },
+    {
+      "id": "ai-3-2-a2",
+      "type": "true-false",
+      "question": "A fluent answer from a language model is guaranteed to be factually correct.",
+      "correct": false,
+      "explanation": "The model generates plausible token sequences and can produce confident but incorrect information."
+    },
+    {
+      "id": "ai-3-2-a3",
+      "type": "fill-blank",
+      "question": "A language model repeatedly predicts the next ___ when generating a response.",
+      "acceptedAnswers": ["token", "text token"],
+      "explanation": "Generation proceeds by predicting a token, adding it to the context and predicting again."
+    }
+  ]
+}

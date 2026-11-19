@@ -1,0 +1,33 @@
+{
+  "id": "ai-1-2",
+  "title": "AI in Everyday Life",
+  "introduction": "Many familiar digital services use AI quietly to rank, predict, recognise or generate information.",
+  "content": "lesson-1-2.md",
+  "learningOutcomes": [
+    "Recognise several everyday uses of AI.",
+    "Explain the role of predictions in familiar applications.",
+    "Distinguish generative AI from systems that classify or rank."
+  ],
+  "activities": [
+    {
+      "id": "ai-1-2-a1",
+      "type": "multiple-choice",
+      "question": "What does a recommendation system usually predict?",
+      "options": [
+        "Which items a person may find relevant",
+        "The exact thoughts of every user",
+        "Whether the internet is made of physical roads",
+        "Only the alphabetical order of items"
+      ],
+      "correctIndex": 0,
+      "explanation": "Recommendation systems estimate relevance from signals such as previous choices and similarities between items."
+    },
+    {
+      "id": "ai-1-2-a2",
+      "type": "fill-blank",
+      "question": "Complete the sentence: A system that creates new text or images is called ___ AI.",
+      "acceptedAnswers": ["generative", "generative ai"],
+      "explanation": "Generative AI produces new content based on patterns learned during training."
+    }
+  ]
+}

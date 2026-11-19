@@ -1,0 +1,33 @@
+{
+  "id": "ai-3-1",
+  "title": "Data and Training",
+  "introduction": "Machine-learning systems build models by finding useful patterns in training data.",
+  "content": "lesson-3-1.md",
+  "learningOutcomes": [
+    "Explain the roles of training data and a model.",
+    "Distinguish training from inference.",
+    "Describe a basic supervised-learning task."
+  ],
+  "activities": [
+    {
+      "id": "ai-3-1-a1",
+      "type": "ordering",
+      "question": "Put the stages of a simple supervised-learning workflow in order.",
+      "items": [
+        { "id": "infer", "text": "Use the model to predict a label for a new example" },
+        { "id": "train", "text": "Train a model to connect features with labels" },
+        { "id": "collect", "text": "Collect and label suitable examples" },
+        { "id": "evaluate", "text": "Evaluate the model on separate examples" }
+      ],
+      "correctOrder": ["collect", "train", "evaluate", "infer"],
+      "explanation": "Examples are prepared before training, evaluation checks unseen examples, and inference applies the resulting model."
+    },
+    {
+      "id": "ai-3-1-a2",
+      "type": "fill-blank",
+      "question": "Using a trained model to make a prediction is called ___.",
+      "acceptedAnswers": ["inference", "inferencing"],
+      "explanation": "Inference is the stage in which a trained model processes new input to produce an output."
+    }
+  ]
+}

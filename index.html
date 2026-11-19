@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="HelloWordly: short, interactive lessons for technical subjects.">
+  <title>HelloWordly</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#app">Skip to content</a>
+  <header class="site-header">
+    <a class="brand" href="#/" aria-label="HelloWordly home">Hello<span>Wordly</span></a>
+    <button id="reset-progress" class="button button-quiet" type="button">Reset progress</button>
+  </header>
+  <main id="app" tabindex="-1" aria-live="polite">
+    <p class="status">Loading HelloWordly…</p>
+  </main>
+  <footer>Learn in small steps. Progress is stored on this device.</footer>
+  <script src="js/content.js" defer></script>
+  <script src="js/progress.js" defer></script>
+  <script src="js/activities.js" defer></script>
+  <script src="js/app.js" defer></script>
+</body>
+</html>

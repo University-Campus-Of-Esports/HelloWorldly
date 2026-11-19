@@ -1,0 +1,9 @@
+{
+  "id": "types-of-ai",
+  "title": "Types of Artificial Intelligence",
+  "description": "Compare AI capabilities and the main approaches used to create them.",
+  "lessons": [
+    { "id": "ai-2-1", "title": "Narrow AI and General AI", "file": "lesson-2-1.json" },
+    { "id": "ai-2-2", "title": "Different Approaches to AI", "file": "lesson-2-2.json" }
+  ]
+}

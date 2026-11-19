@@ -1,0 +1,9 @@
+{
+  "id": "what-is-ai",
+  "title": "What Is Artificial Intelligence?",
+  "description": "Meet AI and recognise where it appears in everyday technology.",
+  "lessons": [
+    { "id": "ai-1-1", "title": "Understanding Artificial Intelligence", "file": "lesson-1-1.json" },
+    { "id": "ai-1-2", "title": "AI in Everyday Life", "file": "lesson-1-2.json" }
+  ]
+}

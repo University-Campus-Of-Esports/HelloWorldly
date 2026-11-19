@@ -1,0 +1,40 @@
+{
+  "id": "ai-4-2",
+  "title": "Using AI Effectively and Responsibly",
+  "introduction": "Clear instructions, careful checking and transparent use make AI assistance more useful and responsible.",
+  "content": "lesson-4-2.md",
+  "learningOutcomes": [
+    "Write a prompt with useful context and constraints.",
+    "Apply a simple process for checking generated information.",
+    "Explain academic integrity and transparency when using AI."
+  ],
+  "activities": [
+    {
+      "id": "ai-4-2-a1",
+      "type": "multiple-choice",
+      "question": "Which prompt is most likely to produce a useful beginner explanation?",
+      "options": [
+        "Explain neural networks in 150 words for a beginner, define two key terms and give one everyday analogy",
+        "Tell me everything",
+        "Write something good about computers",
+        "Give the perfect answer with no context"
+      ],
+      "correctIndex": 0,
+      "explanation": "It states the task, audience, length, required content and desired format."
+    },
+    {
+      "id": "ai-4-2-a2",
+      "type": "fill-blank",
+      "question": "Being open about when and how AI assisted your work is called ___.",
+      "acceptedAnswers": ["transparency", "being transparent"],
+      "explanation": "Transparency allows readers, teachers or colleagues to understand the role AI played."
+    },
+    {
+      "id": "ai-4-2-a3",
+      "type": "true-false",
+      "question": "If an AI output includes a reference, you should assume that the reference exists and supports the claim.",
+      "correct": false,
+      "explanation": "References can be invented or misrepresented, so locate and inspect the original source."
+    }
+  ]
+}

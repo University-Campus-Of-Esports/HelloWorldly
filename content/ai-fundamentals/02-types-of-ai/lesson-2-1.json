@@ -1,0 +1,33 @@
+{
+  "id": "ai-2-1",
+  "title": "Narrow AI and General AI",
+  "introduction": "AI systems can be discussed by the breadth of tasks they are able to perform.",
+  "content": "lesson-2-1.md",
+  "learningOutcomes": [
+    "Define artificial narrow intelligence and artificial general intelligence.",
+    "Compare specialised capability with general capability.",
+    "Recognise that AGI remains hypothetical."
+  ],
+  "activities": [
+    {
+      "id": "ai-2-1-a1",
+      "type": "true-false",
+      "question": "A highly capable chess program is an example of narrow AI.",
+      "correct": true,
+      "explanation": "Its capability is specialised for chess, even if it performs that task better than most people."
+    },
+    {
+      "id": "ai-2-1-a2",
+      "type": "multiple-choice",
+      "question": "Which statement about artificial general intelligence is most accurate?",
+      "options": [
+        "It is a hypothetical form of AI with broad, adaptable intellectual capability",
+        "It is another name for every current chatbot",
+        "It means software installed in several countries",
+        "It is any system that performs one task very well"
+      ],
+      "correctIndex": 0,
+      "explanation": "AGI describes a proposed broad and adaptable capability; there is no settled demonstration that current systems meet it."
+    }
+  ]
+}

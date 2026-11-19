@@ -1,0 +1,33 @@
+{
+  "id": "ai-1-1",
+  "title": "Understanding Artificial Intelligence",
+  "introduction": "Artificial intelligence is a way of making computer systems perform tasks that normally require aspects of human intelligence.",
+  "content": "lesson-1-1.md",
+  "learningOutcomes": [
+    "Describe artificial intelligence in simple terms.",
+    "Distinguish an AI system from conventional rule-based software.",
+    "Identify common applications of AI."
+  ],
+  "activities": [
+    {
+      "id": "ai-1-1-a1",
+      "type": "multiple-choice",
+      "question": "Which description best fits an AI system?",
+      "options": [
+        "A system that finds patterns to make predictions or decisions",
+        "Any program stored on a computer",
+        "A machine that always thinks exactly like a person",
+        "A program that never makes mistakes"
+      ],
+      "correctIndex": 0,
+      "explanation": "AI systems commonly use patterns in data to produce predictions, decisions or generated content."
+    },
+    {
+      "id": "ai-1-1-a2",
+      "type": "true-false",
+      "question": "All software is artificial intelligence.",
+      "correct": false,
+      "explanation": "Much conventional software follows explicitly written rules without learning patterns from data."
+    }
+  ]
+}

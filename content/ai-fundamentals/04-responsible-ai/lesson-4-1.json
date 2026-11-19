@@ -1,0 +1,45 @@
+{
+  "id": "ai-4-1",
+  "title": "AI Bias, Privacy and Reliability",
+  "introduction": "Responsible use begins by recognising where AI systems can cause harm or produce unreliable results.",
+  "content": "lesson-4-1.md",
+  "learningOutcomes": [
+    "Explain how dataset bias can affect outputs.",
+    "Identify privacy and reliability concerns.",
+    "Describe the role of human oversight."
+  ],
+  "activities": [
+    {
+      "id": "ai-4-1-a1",
+      "type": "multiple-choice",
+      "question": "A face-recognition system was evaluated mostly on one demographic group. What is the key concern?",
+      "options": [
+        "Its performance may be worse for under-represented groups",
+        "It will automatically become artificial general intelligence",
+        "Its files will always be too small",
+        "It cannot process any images"
+      ],
+      "correctIndex": 0,
+      "explanation": "Unrepresentative data can hide unequal error rates and lead to poorer performance for groups with too few examples."
+    },
+    {
+      "id": "ai-4-1-a2",
+      "type": "true-false",
+      "question": "Removing a person's name always makes a dataset completely anonymous.",
+      "correct": false,
+      "explanation": "Other details can sometimes be combined to identify a person, so privacy needs broader assessment."
+    },
+    {
+      "id": "ai-4-1-a3",
+      "type": "ordering",
+      "question": "Put these actions in a sensible order before relying on a high-impact AI output.",
+      "items": [
+        { "id": "review", "text": "Have an accountable person review the result" },
+        { "id": "context", "text": "Check the input and operating context" },
+        { "id": "evidence", "text": "Compare the output with reliable evidence" }
+      ],
+      "correctOrder": ["context", "evidence", "review"],
+      "explanation": "First understand the case, then verify the output against evidence, with an accountable human making or reviewing the decision."
+    }
+  ]
+}
