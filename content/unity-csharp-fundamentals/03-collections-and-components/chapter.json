@@ -1,0 +1,9 @@
+{
+  "id": "collections-and-components",
+  "title": "Collections and Components",
+  "description": "Store groups of values and connect scripts to Unity's component model.",
+  "lessons": [
+    { "id": "unity-cs-3-1", "title": "Arrays and Lists", "file": "lesson-3-1.json" },
+    { "id": "unity-cs-3-2", "title": "GameObjects and Components", "file": "lesson-3-2.json" }
+  ]
+}

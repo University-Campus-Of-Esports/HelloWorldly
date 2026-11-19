@@ -1,0 +1,27 @@
+{
+  "id": "unity-cs-2-2",
+  "title": "Writing Methods",
+  "introduction": "Methods give behaviour a name and define how values enter and leave a reusable operation.",
+  "content": "lesson-2-2.md",
+  "learningOutcomes": [
+    "Identify return types, parameters and arguments.",
+    "Write a method that returns a calculated value.",
+    "Use access modifiers to control where a member can be used."
+  ],
+  "activities": [
+    {
+      "id": "unity-cs-2-2-a1",
+      "type": "fill-blank",
+      "question": "Which keyword means a method returns no value?",
+      "acceptedAnswers": ["void"],
+      "explanation": "void is the return type used when a method performs work without returning a value."
+    },
+    {
+      "id": "unity-cs-2-2-a2",
+      "type": "true-false",
+      "question": "A private method can be called freely from any unrelated class.",
+      "correct": false,
+      "explanation": "A private member is accessible only within its containing class."
+    }
+  ]
+}

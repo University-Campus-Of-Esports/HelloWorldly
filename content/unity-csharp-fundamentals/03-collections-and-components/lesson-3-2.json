@@ -1,0 +1,28 @@
+{
+  "id": "unity-cs-3-2",
+  "title": "GameObjects and Components",
+  "introduction": "Unity builds scene behaviour by attaching focused components to GameObjects and connecting them through references.",
+  "content": "lesson-3-2.md",
+  "learningOutcomes": [
+    "Describe the relationship between GameObjects and components.",
+    "Expose a private field to the Inspector with SerializeField.",
+    "Retrieve and validate a component reference."
+  ],
+  "activities": [
+    {
+      "id": "unity-cs-3-2-a1",
+      "type": "multiple-choice",
+      "question": "Which attribute exposes a supported private field in the Inspector?",
+      "options": ["[SerializeField]", "[HideInInspector]", "[NonSerialized]", "[ContextMenu]"],
+      "correctIndex": 0,
+      "explanation": "SerializeField asks Unity to serialise a supported private field, which also makes it editable in the Inspector by default."
+    },
+    {
+      "id": "unity-cs-3-2-a2",
+      "type": "true-false",
+      "question": "GetComponent<Rigidbody>() searches for a Rigidbody on the same GameObject.",
+      "correct": true,
+      "explanation": "GetComponent<T>() retrieves a component of type T attached to the same GameObject, or returns null when none exists."
+    }
+  ]
+}

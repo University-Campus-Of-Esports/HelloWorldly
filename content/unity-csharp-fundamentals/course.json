@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "unity-csharp-fundamentals",
+  "title": "C# Fundamentals for Unity",
+  "description": "Learn core C# through Unity components, conventions and gameplay-focused examples.",
+  "chapters": [
+    { "id": "csharp-foundations", "manifest": "01-csharp-foundations/chapter.json" },
+    { "id": "decisions-and-methods", "manifest": "02-decisions-and-methods/chapter.json" },
+    { "id": "collections-and-components", "manifest": "03-collections-and-components/chapter.json" },
+    { "id": "unity-gameplay-scripts", "manifest": "04-unity-gameplay-scripts/chapter.json" }
+  ]
+}

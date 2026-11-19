@@ -1,0 +1,28 @@
+{
+  "id": "unity-cs-4-2",
+  "title": "References and Spawning",
+  "introduction": "Gameplay scripts often refer to scene objects and prefab assets, so they must handle missing references and object lifetimes safely.",
+  "content": "lesson-4-2.md",
+  "learningOutcomes": [
+    "Assign and validate a Unity object reference.",
+    "Instantiate a prefab with a position and rotation.",
+    "Destroy a spawned GameObject through Unity's API."
+  ],
+  "activities": [
+    {
+      "id": "unity-cs-4-2-a1",
+      "type": "multiple-choice",
+      "question": "Which method creates a runtime copy of a prefab?",
+      "options": ["Instantiate", "Destroy", "GetComponent", "Debug.Log"],
+      "correctIndex": 0,
+      "explanation": "Instantiate creates a runtime copy of a Unity object such as a prefab."
+    },
+    {
+      "id": "unity-cs-4-2-a2",
+      "type": "fill-blank",
+      "question": "Which Unity method schedules a GameObject or component for removal?",
+      "acceptedAnswers": ["Destroy", "Destroy()"],
+      "explanation": "Destroy safely schedules a Unity object for removal; ordinary C# code should not manually destroy its native engine object."
+    }
+  ]
+}

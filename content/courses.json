@@ -8,6 +8,10 @@
     {
       "id": "cpp-fundamentals",
       "manifest": "cpp-fundamentals/course.json"
+    },
+    {
+      "id": "unity-csharp-fundamentals",
+      "manifest": "unity-csharp-fundamentals/course.json"
     }
   ]
 }

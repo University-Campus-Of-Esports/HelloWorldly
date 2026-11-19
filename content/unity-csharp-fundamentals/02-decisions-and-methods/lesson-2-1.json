@@ -1,0 +1,33 @@
+{
+  "id": "unity-cs-2-1",
+  "title": "Branches and Loops",
+  "introduction": "Branches choose behaviour from conditions, while loops repeat work in a controlled way.",
+  "content": "lesson-2-1.md",
+  "learningOutcomes": [
+    "Select behaviour with if, else if and else.",
+    "Choose an appropriate loop for repeated work.",
+    "Explain how a loop condition prevents or ends repetition."
+  ],
+  "activities": [
+    {
+      "id": "unity-cs-2-1-a1",
+      "type": "ordering",
+      "question": "Order these branches from the first condition checked to the fallback branch.",
+      "items": [
+        { "id": "unity-else", "text": "else" },
+        { "id": "unity-if", "text": "if" },
+        { "id": "unity-else-if", "text": "else if" }
+      ],
+      "correctOrder": ["unity-if", "unity-else-if", "unity-else"],
+      "explanation": "An if starts the chain, optional else-if branches test alternatives, and else handles anything remaining."
+    },
+    {
+      "id": "unity-cs-2-1-a2",
+      "type": "multiple-choice",
+      "question": "Which loop is most direct when an action must run exactly three times?",
+      "options": ["A for loop with a counter", "An if statement", "An else branch", "A return statement"],
+      "correctIndex": 0,
+      "explanation": "A counter-based for loop clearly expresses initialisation, continuation and increment for a known repeat count."
+    }
+  ]
+}

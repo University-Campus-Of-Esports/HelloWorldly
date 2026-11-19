@@ -1,0 +1,28 @@
+{
+  "id": "unity-cs-3-1",
+  "title": "Arrays and Lists",
+  "introduction": "Arrays and generic lists store ordered groups of values of one element type.",
+  "content": "lesson-3-1.md",
+  "learningOutcomes": [
+    "Create a typed array and List.",
+    "Read collection elements safely by position or foreach loop.",
+    "Choose between a fixed-size array and a resizable List."
+  ],
+  "activities": [
+    {
+      "id": "unity-cs-3-1-a1",
+      "type": "multiple-choice",
+      "question": "Which property reports the number of elements in a List<T>?",
+      "options": ["Count", "Length", "Size", "CapacityOnly"],
+      "correctIndex": 0,
+      "explanation": "List<T>.Count reports the number of elements currently stored in the list."
+    },
+    {
+      "id": "unity-cs-3-1-a2",
+      "type": "true-false",
+      "question": "The first element in a non-empty C# array is at index 0.",
+      "correct": true,
+      "explanation": "C# arrays and lists use zero-based indexing."
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "id": "decisions-and-methods",
+  "title": "Decisions and Methods",
+  "description": "Control what code runs and organise behaviour into reusable methods.",
+  "lessons": [
+    { "id": "unity-cs-2-1", "title": "Branches and Loops", "file": "lesson-2-1.json" },
+    { "id": "unity-cs-2-2", "title": "Writing Methods", "file": "lesson-2-2.json" }
+  ]
+}

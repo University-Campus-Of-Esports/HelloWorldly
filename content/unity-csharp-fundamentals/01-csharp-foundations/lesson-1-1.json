@@ -1,0 +1,28 @@
+{
+  "id": "unity-cs-1-1",
+  "title": "Reading a Unity Script",
+  "introduction": "A Unity script is a C# class that can use engine types and, when derived from MonoBehaviour, become a GameObject component.",
+  "content": "lesson-1-1.md",
+  "learningOutcomes": [
+    "Recognise the class and method structure of a Unity C# script.",
+    "Identify common C# and Unity value types.",
+    "Apply common C# naming conventions to simple declarations."
+  ],
+  "activities": [
+    {
+      "id": "unity-cs-1-1-a1",
+      "type": "multiple-choice",
+      "question": "Which base class lets a script be attached to a GameObject as a component?",
+      "options": ["MonoBehaviour", "string", "Vector3", "Debug"],
+      "correctIndex": 0,
+      "explanation": "A class derived from MonoBehaviour can be attached to a GameObject as a component."
+    },
+    {
+      "id": "unity-cs-1-1-a2",
+      "type": "true-false",
+      "question": "A semicolon normally terminates a simple C# statement.",
+      "correct": true,
+      "explanation": "Declarations, assignments and method calls are simple statements and normally end with a semicolon."
+    }
+  ]
+}

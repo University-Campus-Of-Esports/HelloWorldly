@@ -1,0 +1,9 @@
+{
+  "id": "unity-gameplay-scripts",
+  "title": "Unity Gameplay Scripts",
+  "description": "Use Unity's script lifecycle and work safely with scene objects and prefabs.",
+  "lessons": [
+    { "id": "unity-cs-4-1", "title": "The MonoBehaviour Lifecycle", "file": "lesson-4-1.json" },
+    { "id": "unity-cs-4-2", "title": "References and Spawning", "file": "lesson-4-2.json" }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "id": "unity-cs-1-2",
+  "title": "Variables and Expressions",
+  "introduction": "Variables hold gameplay state, while operators calculate, compare and update their values.",
+  "content": "lesson-1-2.md",
+  "learningOutcomes": [
+    "Declare, initialise and update typed variables.",
+    "Use arithmetic, comparison and logical operators.",
+    "Use const for a value that must not change."
+  ],
+  "activities": [
+    {
+      "id": "unity-cs-1-2-a1",
+      "type": "fill-blank",
+      "question": "Complete the operator that adds points to score: score ___ points;",
+      "acceptedAnswers": ["+="],
+      "explanation": "+= adds the right-hand value to the existing left-hand value and stores the result."
+    },
+    {
+      "id": "unity-cs-1-2-a2",
+      "type": "multiple-choice",
+      "question": "Which expression is true only when health is positive and the player is alive?",
+      "options": ["health > 0 && isAlive", "health = 0", "health > 0 || isAlive", "!health + isAlive"],
+      "correctIndex": 0,
+      "explanation": "The && operator requires both the positive-health comparison and isAlive to be true."
+    }
+  ]
+}

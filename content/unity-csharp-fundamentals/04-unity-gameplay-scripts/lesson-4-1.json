@@ -1,0 +1,33 @@
+{
+  "id": "unity-cs-4-1",
+  "title": "The MonoBehaviour Lifecycle",
+  "introduction": "Unity invokes special MonoBehaviour methods at defined points in a component's lifetime and game loop.",
+  "content": "lesson-4-1.md",
+  "learningOutcomes": [
+    "Distinguish the purposes of Awake, Start and Update.",
+    "Use Time.deltaTime for frame-rate-independent change.",
+    "Choose FixedUpdate for Rigidbody physics work."
+  ],
+  "activities": [
+    {
+      "id": "unity-cs-4-1-a1",
+      "type": "ordering",
+      "question": "Order these events for an enabled component before and during its first frame updates.",
+      "items": [
+        { "id": "unity-update", "text": "Update" },
+        { "id": "unity-awake", "text": "Awake" },
+        { "id": "unity-start", "text": "Start" }
+      ],
+      "correctOrder": ["unity-awake", "unity-start", "unity-update"],
+      "explanation": "Awake performs early initialisation, Start runs before the first Update, and Update then runs once per rendered frame while enabled."
+    },
+    {
+      "id": "unity-cs-4-1-a2",
+      "type": "multiple-choice",
+      "question": "Which method is intended for regular Rigidbody physics changes?",
+      "options": ["FixedUpdate", "Update", "ToString", "OnGUI"],
+      "correctIndex": 0,
+      "explanation": "FixedUpdate runs with Unity's fixed physics timestep and is the normal place for regular Rigidbody physics operations."
+    }
+  ]
+}
