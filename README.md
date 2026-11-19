@@ -1,48 +1,96 @@
 # HelloWordly
 
-HelloWordly is a minimal, mobile-first learning application for short technical lessons and interactive exercises. It is a static site inspired by the simplicity of SoloLearn, with content kept separate from application code.
+Short, interactive lessons for learning technical subjects one step at a time.
 
-The included **AI Fundamentals** course provides eight beginner lessons across four chapters. No account, backend or build step is required; progress stays in the browser's `localStorage`.
+[![Deploy to GitHub Pages](https://github.com/University-Campus-Of-Esports/HelloWorldly/actions/workflows/deploy.yml/badge.svg)](https://github.com/University-Campus-Of-Esports/HelloWorldly/actions/workflows/deploy.yml)
 
-## Features
+[View the live site](https://university-campus-of-esports.github.io/HelloWorldly/) · [Create course content](CONTENT_GUIDE.md) · [Report an issue](https://github.com/University-Campus-Of-Esports/HelloWorldly/issues)
 
-- Course, chapter and lesson navigation using refresh-safe URL hashes.
-- Markdown explanations and JSON metadata loaded from content manifests.
-- Multiple-choice, true-or-false, fill-in-the-blank and ordering activities.
-- Immediate feedback, retry support and lesson/course completion indicators.
-- Persistent progress with a confirmed reset option.
-- Responsive dark theme, semantic controls, keyboard operation and visible focus.
-- Safe, deliberately limited Markdown rendering that escapes raw HTML.
-- Friendly errors when content cannot be loaded.
+HelloWordly is a mobile-first learning app built for concise explanations and hands-on activities. The included **AI Fundamentals** course introduces artificial intelligence through eight beginner-friendly lessons across four chapters.
 
-## Technology
+The app runs entirely in the browser. There are no accounts, runtime dependencies, external APIs, or build tools, and learning progress stays on the user's device.
 
-HTML5, CSS3, vanilla JavaScript, Markdown and JSON. There are no runtime dependencies, package manager, framework, compiler, external API or database.
+## What you can do
 
-## Deploy to GitHub Pages
+- Work through Markdown-based lessons organised into courses and chapters.
+- Practise with multiple-choice, true-or-false, fill-in-the-blank, and ordering activities.
+- Get immediate feedback, retry activities, and track lesson and course completion.
+- Resume where you left off with progress saved in browser storage.
+- Navigate by keyboard and use visible focus states and semantic controls.
+- Share or refresh lesson URLs without losing your place.
 
-1. Put these files in a GitHub repository whose default deployment branch is `main`.
-2. In **Settings → Pages → Build and deployment**, select **GitHub Actions** as the source. This is the one-time repository setting.
-3. Push to `main`, or run **Deploy HelloWordly to GitHub Pages** manually from the Actions tab.
-4. Read the deployment job's `github-pages` environment URL after it succeeds.
+## Run locally
 
-The workflow in `.github/workflows/deploy.yml` uses GitHub's official Pages actions and uploads the repository directly. All application URLs are resolved relative to `document.baseURI`, so both account sites and project sites under a repository subdirectory are supported.
+Because lesson content is loaded with `fetch`, serve the repository through a local web server instead of opening `index.html` directly.
 
-## Author content
+```bash
+git clone https://github.com/University-Campus-Of-Esports/HelloWorldly.git
+cd HelloWorldly
+python -m http.server 8000
+```
 
-Read [CONTENT_GUIDE.md](CONTENT_GUIDE.md) for the schemas and concise examples. In summary:
+Then open [http://localhost:8000](http://localhost:8000). Depending on your Python installation, the command may be `python3 -m http.server 8000` or `py -m http.server 8000`.
 
-1. Add a lesson JSON file and its Markdown file to a chapter directory.
-2. Register the lesson in that directory's `chapter.json`.
-3. To add a chapter, register its `chapter.json` in the course manifest.
-4. To add a course, register its course manifest in `content/courses.json`.
+## Create or edit a course
 
-Use [CONTENT_PROMPT.md](CONTENT_PROMPT.md) as a reusable prompt for a chatbot or coding agent to create a complete chapter without changing application source files.
+Application code and learning content are kept separate. Course metadata and activities use JSON, while lesson explanations use Markdown.
 
-## Known limitations
+```text
+content/
+├── courses.json
+└── ai-fundamentals/
+    ├── course.json
+    └── 01-what-is-ai/
+        ├── chapter.json
+        ├── lesson-1-1.json
+        └── lesson-1-1.md
+```
 
-- Progress is device- and browser-specific and is lost when site storage is cleared.
-- Markdown intentionally supports only headings, paragraphs, emphasis, lists, blockquotes, fenced code and HTTP(S) links.
-- Activities assess fixed answers only; the application does not run code or use AI assessment.
-- Content is fetched by the browser, so it is intended to be read from GitHub Pages rather than directly from a local file URL.
-- There is no account, synchronisation, search or offline mode.
+To add content:
+
+1. Add a lesson's JSON metadata and Markdown content to a chapter directory.
+2. Register the lesson in the chapter's `chapter.json` manifest.
+3. Register new chapters in `course.json` and new courses in `content/courses.json`.
+
+See the [content authoring guide](CONTENT_GUIDE.md) for schemas and examples. The [content prompt](CONTENT_PROMPT.md) is also available as a reusable brief for generating a complete chapter with an AI assistant.
+
+## Project structure
+
+```text
+├── .github/workflows/   # GitHub Pages deployment
+├── content/             # Course, chapter, and lesson content
+├── js/                  # Navigation, activities, content, and progress logic
+├── index.html           # Application shell
+└── style.css            # Responsive interface and theme
+```
+
+HelloWordly uses HTML, CSS, and vanilla JavaScript. Its deliberately limited Markdown renderer escapes raw HTML and supports headings, paragraphs, emphasis, lists, blockquotes, fenced code blocks, and HTTP(S) links.
+
+## Deploy
+
+The included GitHub Actions workflow deploys the static site to GitHub Pages whenever a change reaches `main`.
+
+For a fork or new repository:
+
+1. Open **Settings → Pages** in the GitHub repository.
+2. Under **Build and deployment**, select **GitHub Actions** as the source.
+3. Push to `main` or manually run the **Deploy HelloWordly to GitHub Pages** workflow.
+
+Relative URLs are resolved from `document.baseURI`, so the app works as either an account site or a project site hosted below a repository path.
+
+## Contributing
+
+Contributions are welcome. Before opening a pull request, please:
+
+- Keep the app dependency-free unless a change clearly justifies otherwise.
+- Follow the existing content manifests and naming conventions.
+- Test navigation, activities, progress persistence, and keyboard interaction locally.
+- Keep lessons concise, approachable, and suitable for their stated audience.
+
+If you are proposing a substantial feature or content change, open an issue first so the approach can be discussed.
+
+## Current limitations
+
+- Progress is specific to one browser and device and is removed when site storage is cleared.
+- Activities use fixed answers; the app does not execute code or use AI-based assessment.
+- There is currently no account synchronisation, search, or offline mode.
