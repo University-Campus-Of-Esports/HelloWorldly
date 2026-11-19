@@ -26,9 +26,10 @@
   function courseById(id) { return loadedCourses.find(course => course.id === id); }
 
   async function initialise() {
-    const index = await Content.loadJSON("content/courses.json");
+    const indexUrl = new URL("content/courses.json", document.baseURI).href;
+    const index = await Content.loadJSON(indexUrl);
     courses = index.courses;
-    loadedCourses = await Promise.all(courses.map(Content.loadCourse));
+    loadedCourses = await Promise.all(courses.map(course => Content.loadCourse(course, indexUrl)));
   }
 
   function renderHome() {

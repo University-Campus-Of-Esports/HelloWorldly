@@ -91,8 +91,8 @@
     return output.join("\n");
   }
 
-  async function loadCourse(courseEntry) {
-    const manifestUrl = resolve(courseEntry.manifest);
+  async function loadCourse(courseEntry, indexUrl) {
+    const manifestUrl = resolve(courseEntry.manifest, indexUrl);
     const course = await loadJSON(manifestUrl);
     const chapters = await Promise.all(course.chapters.map(async chapterEntry => {
       const chapterUrl = resolve(chapterEntry.manifest, manifestUrl);
