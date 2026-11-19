@@ -4,6 +4,10 @@
     {
       "id": "ai-fundamentals",
       "manifest": "ai-fundamentals/course.json"
+    },
+    {
+      "id": "cpp-fundamentals",
+      "manifest": "cpp-fundamentals/course.json"
     }
   ]
 }

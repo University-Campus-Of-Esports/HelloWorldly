@@ -1,0 +1,9 @@
+{
+  "id": "unreal-types-and-containers",
+  "title": "Unreal Types and Containers",
+  "description": "Represent text and groups of values with engine-friendly types.",
+  "lessons": [
+    { "id": "cpp-3-1", "title": "Strings, Names and Text", "file": "lesson-3-1.json" },
+    { "id": "cpp-3-2", "title": "Working with TArray", "file": "lesson-3-2.json" }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "id": "cpp-1-2",
+  "title": "Variables and Expressions",
+  "introduction": "Variables hold game state, while operators combine and update their values.",
+  "content": "lesson-1-2.md",
+  "learningOutcomes": [
+    "Declare, initialise and update typed variables.",
+    "Use arithmetic, comparison and logical operators.",
+    "Use const for a value that should not change."
+  ],
+  "activities": [
+    {
+      "id": "cpp-1-2-a1",
+      "type": "fill-blank",
+      "question": "Complete the operator that adds Damage to TotalDamage: TotalDamage ___ Damage;",
+      "acceptedAnswers": ["+="],
+      "explanation": "+= adds the right-hand value to the existing left-hand value and stores the result."
+    },
+    {
+      "id": "cpp-1-2-a2",
+      "type": "multiple-choice",
+      "question": "Which expression is true only when Health is positive and the character is alive?",
+      "options": ["Health > 0 && bIsAlive", "Health = 0", "Health > 0 || bIsAlive", "!Health + bIsAlive"],
+      "correctIndex": 0,
+      "explanation": "The && operator requires both the positive-health comparison and bIsAlive to be true."
+    }
+  ]
+}

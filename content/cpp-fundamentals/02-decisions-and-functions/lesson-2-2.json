@@ -1,0 +1,27 @@
+{
+  "id": "cpp-2-2",
+  "title": "Writing Functions",
+  "introduction": "Functions give behaviour a name and define how values enter and leave a reusable operation.",
+  "content": "lesson-2-2.md",
+  "learningOutcomes": [
+    "Identify return types, parameters and arguments.",
+    "Write a function that returns a calculated value.",
+    "Explain why const references are useful for read-only inputs."
+  ],
+  "activities": [
+    {
+      "id": "cpp-2-2-a1",
+      "type": "fill-blank",
+      "question": "Which keyword means a function returns no value?",
+      "acceptedAnswers": ["void"],
+      "explanation": "void is the return type used when a function performs work without returning a value."
+    },
+    {
+      "id": "cpp-2-2-a2",
+      "type": "true-false",
+      "question": "Passing a large read-only value as const Type& can avoid copying it.",
+      "correct": true,
+      "explanation": "A const reference aliases the original value without copying and prevents the function from modifying it through that parameter."
+    }
+  ]
+}

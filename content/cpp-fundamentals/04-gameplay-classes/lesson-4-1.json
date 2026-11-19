@@ -1,0 +1,29 @@
+{
+  "id": "cpp-4-1",
+  "title": "Classes and Actors",
+  "introduction": "Classes combine state and behaviour, while Unreal reflection exposes selected members to engine systems.",
+  "content": "lesson-4-1.md",
+  "learningOutcomes": [
+    "Distinguish a class from an object instance.",
+    "Recognise the purpose of common Unreal reflection macros.",
+    "Describe the roles of an Actor constructor, BeginPlay and Tick."
+  ],
+  "activities": [
+    {
+      "id": "cpp-4-1-a1",
+      "type": "multiple-choice",
+      "question": "Which macro marks an Unreal class declaration for the reflection system?",
+      "options": ["UCLASS()", "UPROPERTY()", "UFUNCTION()", "TEXT()"],
+      "correctIndex": 0,
+      "explanation": "UCLASS marks the class, while UPROPERTY and UFUNCTION mark reflected members."
+    },
+    {
+      "id": "cpp-4-1-a2",
+      "type": "multiple-choice",
+      "question": "Where should instance-dependent startup logic normally run for an Actor?",
+      "options": ["BeginPlay", "The preprocessor", "The header guard", "A TEXT macro"],
+      "correctIndex": 0,
+      "explanation": "BeginPlay runs when play begins for that Actor instance and is suitable for initialisation that depends on the world or other instances."
+    }
+  ]
+}

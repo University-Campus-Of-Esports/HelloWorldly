@@ -1,0 +1,9 @@
+{
+  "id": "cpp-foundations",
+  "title": "C++ Foundations",
+  "description": "Read Unreal-flavoured C++ and work with values, types and expressions.",
+  "lessons": [
+    { "id": "cpp-1-1", "title": "Reading Unreal C++", "file": "lesson-1-1.json" },
+    { "id": "cpp-1-2", "title": "Variables and Expressions", "file": "lesson-1-2.json" }
+  ]
+}

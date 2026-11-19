@@ -1,0 +1,27 @@
+{
+  "id": "cpp-3-2",
+  "title": "Working with TArray",
+  "introduction": "TArray is Unreal's dynamic, ordered container for storing any number of values of one element type.",
+  "content": "lesson-3-2.md",
+  "learningOutcomes": [
+    "Create a typed TArray and add elements.",
+    "Read elements safely by index or range-based loop.",
+    "Query and modify the number of stored elements."
+  ],
+  "activities": [
+    {
+      "id": "cpp-3-2-a1",
+      "type": "fill-blank",
+      "question": "Which TArray function returns the current number of elements?",
+      "acceptedAnswers": ["Num", "Num()"],
+      "explanation": "Num() returns an int32 containing the array's current element count."
+    },
+    {
+      "id": "cpp-3-2-a2",
+      "type": "true-false",
+      "question": "The first element in a non-empty TArray is at index 0.",
+      "correct": true,
+      "explanation": "Like standard C++ arrays and containers, TArray uses zero-based indexing."
+    }
+  ]
+}

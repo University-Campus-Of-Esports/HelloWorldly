@@ -1,0 +1,28 @@
+{
+  "id": "cpp-4-2",
+  "title": "Object References and Safety",
+  "introduction": "Pointers refer to existing objects, so gameplay code must handle missing or invalid references safely.",
+  "content": "lesson-4-2.md",
+  "learningOutcomes": [
+    "Explain what a pointer and nullptr represent.",
+    "Check an Unreal object reference before use.",
+    "Recognise an Unreal-managed UObject property declaration."
+  ],
+  "activities": [
+    {
+      "id": "cpp-4-2-a1",
+      "type": "multiple-choice",
+      "question": "What should code do before calling a method through an optional Actor pointer?",
+      "options": ["Check that the pointer is valid", "Convert it to an int32", "Always delete the Actor", "Add it to an FString"],
+      "correctIndex": 0,
+      "explanation": "An optional pointer may be null or no longer valid, so code must validate it before dereferencing it."
+    },
+    {
+      "id": "cpp-4-2-a2",
+      "type": "fill-blank",
+      "question": "Which modern C++ literal represents a null pointer?",
+      "acceptedAnswers": ["nullptr"],
+      "explanation": "nullptr is the type-safe null pointer literal used when a pointer refers to no object."
+    }
+  ]
+}

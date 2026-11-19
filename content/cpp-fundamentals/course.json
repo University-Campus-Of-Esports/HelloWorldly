@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "cpp-fundamentals",
+  "title": "C++ Fundamentals",
+  "description": "Learn core C++ through Unreal Engine types, conventions and gameplay-focused examples.",
+  "chapters": [
+    { "id": "cpp-foundations", "manifest": "01-cpp-foundations/chapter.json" },
+    { "id": "decisions-and-functions", "manifest": "02-decisions-and-functions/chapter.json" },
+    { "id": "unreal-types-and-containers", "manifest": "03-unreal-types-and-containers/chapter.json" },
+    { "id": "gameplay-classes", "manifest": "04-gameplay-classes/chapter.json" }
+  ]
+}

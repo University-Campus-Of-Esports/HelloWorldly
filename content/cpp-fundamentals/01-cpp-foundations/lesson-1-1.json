@@ -1,0 +1,28 @@
+{
+  "id": "cpp-1-1",
+  "title": "Reading Unreal C++",
+  "introduction": "Unreal C++ is the C++ language used with engine-specific types, macros and naming conventions.",
+  "content": "lesson-1-1.md",
+  "learningOutcomes": [
+    "Recognise the basic structure of a C++ statement and function.",
+    "Identify common Unreal integer and floating-point types.",
+    "Apply Unreal naming conventions to simple declarations."
+  ],
+  "activities": [
+    {
+      "id": "cpp-1-1-a1",
+      "type": "multiple-choice",
+      "question": "Which declaration best follows Unreal conventions for a whole-number player score?",
+      "options": ["int32 PlayerScore = 0;", "var player_score = 0;", "float PlayerScore = false;", "FString PlayerScore = 0;"],
+      "correctIndex": 0,
+      "explanation": "int32 gives an explicitly sized signed integer, and PlayerScore follows Unreal's PascalCase naming style."
+    },
+    {
+      "id": "cpp-1-1-a2",
+      "type": "true-false",
+      "question": "A semicolon normally terminates a simple C++ statement.",
+      "correct": true,
+      "explanation": "Declarations, assignments and function calls are simple statements and normally end with a semicolon."
+    }
+  ]
+}

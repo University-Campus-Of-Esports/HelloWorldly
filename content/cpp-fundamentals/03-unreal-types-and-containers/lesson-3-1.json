@@ -1,0 +1,29 @@
+{
+  "id": "cpp-3-1",
+  "title": "Strings, Names and Text",
+  "introduction": "Unreal provides different text types for manipulation, identifiers and player-facing localisation.",
+  "content": "lesson-3-1.md",
+  "learningOutcomes": [
+    "Choose between FString, FName and FText.",
+    "Create an FString with an Unreal string literal.",
+    "Format a simple value for logging or display."
+  ],
+  "activities": [
+    {
+      "id": "cpp-3-1-a1",
+      "type": "multiple-choice",
+      "question": "Which Unreal type is intended for localised player-facing text?",
+      "options": ["FText", "FName", "int32", "bool"],
+      "correctIndex": 0,
+      "explanation": "FText carries information needed by Unreal's text localisation system and is the normal choice for player-facing text."
+    },
+    {
+      "id": "cpp-3-1-a2",
+      "type": "multiple-choice",
+      "question": "Which type is a good choice for a frequently compared, case-insensitive identifier?",
+      "options": ["FName", "FText", "float", "TArray"],
+      "correctIndex": 0,
+      "explanation": "FName is designed for efficient name storage and comparison and is commonly used for identifiers."
+    }
+  ]
+}
