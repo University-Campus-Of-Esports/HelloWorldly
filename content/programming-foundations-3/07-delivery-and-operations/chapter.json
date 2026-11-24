@@ -1,0 +1,9 @@
+{
+  "id": "delivery-and-operations",
+  "title": "Delivery and Operations",
+  "description": "Automate safe delivery, observe production behaviour and maintain software over time.",
+  "lessons": [
+    { "id": "pf3-9", "title": "CI, Delivery and Observability", "file": "lesson-9.json", "version": 1, "estimatedMinutes": 20 },
+    { "id": "pf3-10", "title": "Advanced Foundations Capstone", "file": "lesson-10.json", "version": 1, "estimatedMinutes": 20 }
+  ]
+}

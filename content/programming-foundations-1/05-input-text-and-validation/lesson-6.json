@@ -1,0 +1,12 @@
+{
+  "id": "pf1-6",
+  "title": "Working with Text",
+  "introduction": "Text values can be compared, searched, split and formatted, but details such as case and whitespace matter.",
+  "content": "lesson-6.md",
+  "learningOutcomes": ["Apply common text operations.", "Normalise text for an appropriate comparison.", "Build readable output from values."],
+  "activities": [
+    { "id": "pf1-6-a1", "type": "multiple-choice", "question": "Which operation commonly removes surrounding whitespace?", "options": ["Trim", "Multiply", "Sort", "Parse Boolean"], "correctIndex": 0, "explanation": "Trimming removes whitespace at the beginning and end of text." },
+    { "id": "pf1-6-a2", "type": "true-false", "question": "Text comparison should always ignore case in every application.", "correct": false, "explanation": "The correct comparison depends on the domain; identifiers and passwords may have different rules from casual commands." },
+    { "id": "pf1-6-a3", "type": "fill-blank", "question": "Breaking text into pieces around a delimiter is commonly called ___.", "acceptedAnswers": ["splitting", "split"], "explanation": "A split operation produces parts separated by a chosen delimiter." }
+  ]
+}

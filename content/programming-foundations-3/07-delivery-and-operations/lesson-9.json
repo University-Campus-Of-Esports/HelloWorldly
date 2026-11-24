@@ -1,0 +1,12 @@
+{
+  "id": "pf3-9",
+  "title": "CI, Delivery and Observability",
+  "introduction": "Automated pipelines produce repeatable evidence, while observability explains how the delivered system behaves.",
+  "content": "lesson-9.md",
+  "learningOutcomes": ["Describe a continuous-integration pipeline.", "Separate deployment from release.", "Use logs, metrics and traces for different questions."],
+  "activities": [
+    { "id": "pf3-9-a1", "type": "ordering", "question": "Order a basic delivery pipeline.", "items": [{ "id": "pf39-deploy", "text": "Deploy the verified artifact" }, { "id": "pf39-build", "text": "Build one reproducible artifact" }, { "id": "pf39-check", "text": "Run static and automated checks" }, { "id": "pf39-source", "text": "Receive a reviewed source change" }], "correctOrder": ["pf39-source", "pf39-check", "pf39-build", "pf39-deploy"], "explanation": "A reviewed change is checked, built once and then the verified artifact is deployed." },
+    { "id": "pf3-9-a2", "type": "multiple-choice", "question": "Which signal best shows request latency over time?", "options": ["A metric", "One source-code comment", "A password", "A branch name"], "correctIndex": 0, "explanation": "Metrics aggregate numeric behaviour such as rates, durations and resource use." },
+    { "id": "pf3-9-a3", "type": "true-false", "question": "Deploying code and exposing it to every user must always happen at the same instant.", "correct": false, "explanation": "Feature flags and staged release can separate deployment from user exposure." }
+  ]
+}

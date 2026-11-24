@@ -1,0 +1,9 @@
+{
+  "id": "concurrency-and-resilience",
+  "title": "Concurrency and Resilience",
+  "description": "Coordinate simultaneous work and design systems that recover from partial failure.",
+  "lessons": [
+    { "id": "pf3-7", "title": "Concurrency and Shared State", "file": "lesson-7.json", "version": 1, "estimatedMinutes": 20 },
+    { "id": "pf3-8", "title": "Timeouts, Retries and Resilience", "file": "lesson-8.json", "version": 1, "estimatedMinutes": 20 }
+  ]
+}

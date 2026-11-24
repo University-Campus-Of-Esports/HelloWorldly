@@ -1,0 +1,12 @@
+{
+  "id": "pf3-7",
+  "title": "Concurrency and Shared State",
+  "introduction": "Concurrent tasks can make progress during overlapping periods, creating new ordering and state risks.",
+  "content": "lesson-7.md",
+  "learningOutcomes": ["Distinguish concurrency from parallelism.", "Recognise a race condition.", "Reduce shared mutable state using ownership or messages."],
+  "activities": [
+    { "id": "pf3-7-a1", "type": "multiple-choice", "question": "What is a race condition?", "options": ["Behaviour that incorrectly depends on timing or interleaving", "A fast loop by definition", "A database table", "A formatting rule"], "correctIndex": 0, "explanation": "A race occurs when unsynchronised operations produce timing-dependent results." },
+    { "id": "pf3-7-a2", "type": "true-false", "question": "Concurrent tasks must always execute simultaneously on different processors.", "correct": false, "explanation": "Concurrency concerns overlapping progress; parallelism is simultaneous execution." },
+    { "id": "pf3-7-a3", "type": "fill-blank", "question": "A mutual-exclusion mechanism protecting a critical section is commonly called a ___.", "acceptedAnswers": ["lock", "mutex"], "explanation": "A lock or mutex allows only one owner into a protected critical section at a time." }
+  ]
+}

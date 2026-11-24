@@ -1,0 +1,12 @@
+{
+  "id": "pf1-10",
+  "title": "Foundations Capstone",
+  "introduction": "A small completed program demonstrates algorithms, data, control flow, functions, validation and debugging together.",
+  "content": "lesson-10.md",
+  "learningOutcomes": ["Scope a complete beginner application.", "Plan tests from acceptance criteria.", "Review a project against foundational skills."],
+  "activities": [
+    { "id": "pf1-10-a1", "type": "multiple-choice", "question": "Which project scope is best for a first capstone?", "options": ["A small complete tool with clear acceptance checks", "A global social network built in one sitting", "An undefined collection of features", "A project with no way to test it"], "correctIndex": 0, "explanation": "A deliberately small complete project provides practice across the whole development cycle." },
+    { "id": "pf1-10-a2", "type": "true-false", "question": "A capstone is complete only when it includes every imaginable feature.", "correct": false, "explanation": "Completion means meeting the defined scope and acceptance criteria, not endless expansion." },
+    { "id": "pf1-10-a3", "type": "ordering", "question": "Order a sensible capstone workflow.", "items": [{ "id": "pf110-review", "text": "Review outcomes and limitations" }, { "id": "pf110-scope", "text": "Define scope and acceptance checks" }, { "id": "pf110-build", "text": "Build in small working increments" }, { "id": "pf110-test", "text": "Test normal, boundary and invalid cases" }], "correctOrder": ["pf110-scope", "pf110-build", "pf110-test", "pf110-review"], "explanation": "Define success first, build incrementally, test thoroughly and then reflect." }
+  ]
+}

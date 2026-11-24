@@ -8,7 +8,7 @@
   "topics": ["programming", "algorithms", "debugging", "problem solving"],
   "difficulty": "beginner",
   "series": { "id": "programming-foundations", "part": 1, "label": "I" },
-  "estimatedMinutes": 80,
+  "estimatedMinutes": 200,
   "prerequisites": [],
   "tools": ["text editor", "optional Python interpreter"],
   "status": "published",
@@ -20,6 +20,9 @@
     { "id": "programs-and-problems", "manifest": "01-programs-and-problems/chapter.json" },
     { "id": "values-and-expressions", "manifest": "02-values-and-expressions/chapter.json" },
     { "id": "control-and-functions", "manifest": "03-control-and-functions/chapter.json" },
-    { "id": "debugging-and-projects", "manifest": "04-debugging-and-projects/chapter.json" }
+    { "id": "debugging-and-projects", "manifest": "04-debugging-and-projects/chapter.json" },
+    { "id": "input-text-and-validation", "manifest": "05-input-text-and-validation/chapter.json" },
+    { "id": "collections-and-state", "manifest": "06-collections-and-state/chapter.json" },
+    { "id": "developer-tools-and-capstone", "manifest": "07-developer-tools-and-capstone/chapter.json" }
   ]
 }

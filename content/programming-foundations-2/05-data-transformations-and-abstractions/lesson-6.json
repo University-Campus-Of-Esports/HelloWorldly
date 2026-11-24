@@ -1,0 +1,12 @@
+{
+  "id": "pf2-6",
+  "title": "Generics and Contracts",
+  "introduction": "Generics reuse an algorithm across types while contracts state what those types and operations must provide.",
+  "content": "lesson-6.md",
+  "learningOutcomes": ["Explain the purpose of a generic type parameter.", "Use constraints to express required capabilities.", "Avoid abstractions that hide rather than clarify behaviour."],
+  "activities": [
+    { "id": "pf2-6-a1", "type": "multiple-choice", "question": "Why use a generic list type?", "options": ["To reuse list behaviour while retaining an element type", "To remove all type checking", "To store only text", "To make every value global"], "correctIndex": 0, "explanation": "A generic list supplies the same collection operations for a declared element type." },
+    { "id": "pf2-6-a2", "type": "true-false", "question": "A generic constraint can require a type to provide a particular capability.", "correct": true, "explanation": "Constraints document and enforce what the generic algorithm needs." },
+    { "id": "pf2-6-a3", "type": "fill-blank", "question": "A promise about accepted inputs and produced behaviour is a ___.", "acceptedAnswers": ["contract"], "explanation": "A contract describes preconditions, results and relevant failure behaviour." }
+  ]
+}

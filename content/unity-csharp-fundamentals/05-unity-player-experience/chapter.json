@@ -1,0 +1,9 @@
+{
+  "id": "unity-player-experience",
+  "title": "Player Input, UI and Scenes",
+  "description": "Connect player actions to gameplay, present state and move safely between scenes.",
+  "lessons": [
+    { "id": "unity-cs-5-1", "title": "Input, Events and User Interface", "file": "lesson-5-1.json", "version": 1, "estimatedMinutes": 20 },
+    { "id": "unity-cs-5-2", "title": "Scenes, Persistence and Builds", "file": "lesson-5-2.json", "version": 1, "estimatedMinutes": 20 }
+  ]
+}

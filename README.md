@@ -6,7 +6,7 @@ Short, interactive lessons for learning technical subjects one step at a time.
 
 [View the live site](https://university-campus-of-esports.github.io/HelloWorldly/) · [Create course content](CONTENT_GUIDE.md) · [Report an issue](https://github.com/University-Campus-Of-Esports/HelloWorldly/issues)
 
-HelloWordly is a mobile-first learning app built for concise explanations and hands-on activities. It includes structured **Programming Foundations I–III**, **AI Fundamentals**, **Unity C# Essentials** and **Unreal C++ Essentials** courses.
+HelloWordly is a mobile-first learning app built for concise explanations and hands-on activities. It includes 60 lessons across structured **Programming Foundations I–III**, **AI Fundamentals**, **Unity C# Essentials** and **Unreal C++ Essentials** courses.
 
 The app runs entirely in the browser. There are no accounts, runtime dependencies, external APIs, or build tools, and learning progress stays on the user's device.
 
@@ -19,6 +19,7 @@ The app runs entirely in the browser. There are no accounts, runtime dependencie
 - Search and filter courses by category, topic and difficulty.
 - See course prerequisites, tools, time estimates and curated further-study links.
 - Follow numbered learning pathways from beginner through advanced material.
+- Complete a date-seeded daily practice mix drawn from every course's activity pool.
 - Navigate by keyboard and use visible focus states and semantic controls.
 - Share or refresh lesson URLs without losing your place.
 
@@ -98,4 +99,5 @@ If you are proposing a substantial feature or content change, open an issue firs
 
 - Progress is specific to one browser and device and is removed when site storage is cleared.
 - Activities use fixed answers; the app does not execute code or use AI-based assessment.
+- Daily practice changes on the learner's local calendar day and retains recent results on the device.
 - There is currently no account synchronisation or offline mode.

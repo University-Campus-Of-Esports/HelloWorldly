@@ -1,0 +1,12 @@
+{
+  "id": "cpp-5-1",
+  "title": "Controllers, Pawns and Enhanced Input",
+  "introduction": "Unreal's gameplay framework separates player intent, controllable presence and game-wide rules.",
+  "content": "lesson-5-1.md",
+  "learningOutcomes": ["Distinguish Controller, Pawn and GameMode responsibilities.", "Map input actions to gameplay intent.", "Choose an appropriate framework class for state."],
+  "activities": [
+    { "id": "cpp-5-1-a1", "type": "multiple-choice", "question": "Which object represents a controllable entity in the world?", "options": ["Pawn", "GameMode", "GameInstance", "SaveGame"], "correctIndex": 0, "explanation": "A Pawn is an Actor designed to be possessed and controlled." },
+    { "id": "cpp-5-1-a2", "type": "true-false", "question": "GameMode is the correct replicated source for every client to read match state.", "correct": false, "explanation": "GameMode is authoritative and server-only in network play; replicated match state belongs in GameState." },
+    { "id": "cpp-5-1-a3", "type": "fill-blank", "question": "The framework object that possesses a Pawn is a ___.", "acceptedAnswers": ["controller", "playercontroller", "player controller"], "explanation": "A Controller drives a possessed Pawn; a PlayerController represents a human player's control." }
+  ]
+}

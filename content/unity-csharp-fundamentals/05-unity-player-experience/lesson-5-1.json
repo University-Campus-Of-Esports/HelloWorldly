@@ -1,0 +1,12 @@
+{
+  "id": "unity-cs-5-1",
+  "title": "Input, Events and User Interface",
+  "introduction": "Unity input becomes gameplay intent, while events keep interface updates separate from the systems that own state.",
+  "content": "lesson-5-1.md",
+  "learningOutcomes": ["Separate device input from gameplay intent.", "Use events to notify independent components.", "Update UI from authoritative game state."],
+  "activities": [
+    { "id": "unity-cs-5-1-a1", "type": "multiple-choice", "question": "Why map an input action named Jump instead of checking one keyboard key everywhere?", "options": ["The gameplay intent can support different devices and bindings", "It makes all input global", "It removes the need for testing", "It guarantees every frame rate"], "correctIndex": 0, "explanation": "An action represents intent independently of a particular control." },
+    { "id": "unity-cs-5-1-a2", "type": "true-false", "question": "A health bar should become the authoritative owner of player health.", "correct": false, "explanation": "The gameplay model owns health; the UI presents that state." },
+    { "id": "unity-cs-5-1-a3", "type": "fill-blank", "question": "A notification that interested listeners can subscribe to is an ___.", "acceptedAnswers": ["event"], "explanation": "Events reduce direct dependencies between the sender and its listeners." }
+  ]
+}

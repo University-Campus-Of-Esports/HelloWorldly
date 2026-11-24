@@ -8,7 +8,7 @@
   "topics": ["ai literacy", "machine learning", "generative ai", "responsible ai"],
   "difficulty": "beginner",
   "series": { "id": "ai-foundations", "part": 1, "label": "I" },
-  "estimatedMinutes": 80,
+  "estimatedMinutes": 120,
   "prerequisites": [],
   "tools": ["web browser"],
   "status": "published",
@@ -20,6 +20,7 @@
     { "id": "what-is-ai", "manifest": "01-what-is-ai/chapter.json" },
     { "id": "types-of-ai", "manifest": "02-types-of-ai/chapter.json" },
     { "id": "how-ai-works", "manifest": "03-how-ai-works/chapter.json" },
-    { "id": "responsible-ai", "manifest": "04-responsible-ai/chapter.json" }
+    { "id": "responsible-ai", "manifest": "04-responsible-ai/chapter.json" },
+    { "id": "evaluating-ai-systems", "manifest": "05-evaluating-ai-systems/chapter.json" }
   ]
 }

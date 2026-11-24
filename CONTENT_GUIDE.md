@@ -76,6 +76,8 @@ The `id` in every manifest entry must match the `id` inside the referenced file.
 
 Use controlled lowercase values for `categories` and `topics`. `difficulty` must be `beginner`, `intermediate` or `advanced`; `status` must be `draft`, `published`, `coming-soon` or `archived`. Use categories for broad areas such as `technology` or `games`, topics for subjects such as `programming` or `unity`, and the difficulty field rather than a difficulty tag. Further-study links must use HTTPS and should favour authoritative, stable sources.
 
+A `published` full course must contain at least ten lessons and two further-study resources. Use `draft` while developing a smaller curriculum and publish only after its outcomes cover the stated course scope.
+
 ## Lesson schema
 
 Each lesson JSON file uses this shape:
@@ -92,6 +94,8 @@ Each lesson JSON file uses this shape:
 ```
 
 `content` points to the lesson Markdown in the same directory. Supply at least one learning outcome and two or three activities. A lesson completes only when every activity is correct.
+
+Every published lesson activity also contributes to that course's daily-practice pool. The application deterministically selects and shuffles six activities using the course ID and learner's local date. Activity IDs must therefore remain globally unique, and questions should make sense when shown without the surrounding lesson page; the practice view displays the source lesson title for context.
 
 ## Markdown
 

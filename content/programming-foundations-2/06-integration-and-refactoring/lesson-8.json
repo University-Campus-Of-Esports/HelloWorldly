@@ -1,0 +1,12 @@
+{
+  "id": "pf2-8",
+  "title": "Refactoring Safely",
+  "introduction": "Refactoring improves internal structure while preserving externally observable behaviour.",
+  "content": "lesson-8.md",
+  "learningOutcomes": ["Define refactoring.", "Recognise common code smells.", "Use tests and small steps to preserve behaviour."],
+  "activities": [
+    { "id": "pf2-8-a1", "type": "true-false", "question": "Adding a new user-visible feature is itself a refactoring.", "correct": false, "explanation": "Refactoring changes internal structure without intentionally changing external behaviour." },
+    { "id": "pf2-8-a2", "type": "multiple-choice", "question": "What is the safest refactoring approach?", "options": ["Small transformations with tests run between them", "Rewrite everything without checks", "Combine several unrelated features", "Delete failing tests"], "correctIndex": 0, "explanation": "Small verified steps make regressions easier to locate and reverse." },
+    { "id": "pf2-8-a3", "type": "fill-blank", "question": "Repeated code, long functions and unclear names are often called code ___.", "acceptedAnswers": ["smells", "smell"], "explanation": "A code smell is evidence worth investigating, not automatic proof of one required solution." }
+  ]
+}

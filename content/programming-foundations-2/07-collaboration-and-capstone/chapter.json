@@ -1,0 +1,9 @@
+{
+  "id": "collaboration-and-capstone",
+  "title": "Collaboration and Intermediate Capstone",
+  "description": "Share changes safely and deliver a maintainable multi-module application.",
+  "lessons": [
+    { "id": "pf2-9", "title": "Branches, Reviews and Merges", "file": "lesson-9.json", "version": 1, "estimatedMinutes": 20 },
+    { "id": "pf2-10", "title": "Intermediate Capstone", "file": "lesson-10.json", "version": 1, "estimatedMinutes": 20 }
+  ]
+}

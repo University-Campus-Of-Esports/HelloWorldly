@@ -8,7 +8,7 @@
   "topics": ["programming", "c++", "unreal engine", "game development"],
   "difficulty": "beginner",
   "series": { "id": "unreal-cpp", "part": 1, "label": "I" },
-  "estimatedMinutes": 90,
+  "estimatedMinutes": 130,
   "prerequisites": ["Programming Foundations I or equivalent"],
   "tools": ["Unreal Engine", "C++ editor"],
   "status": "published",
@@ -20,6 +20,7 @@
     { "id": "cpp-foundations", "manifest": "01-cpp-foundations/chapter.json" },
     { "id": "decisions-and-functions", "manifest": "02-decisions-and-functions/chapter.json" },
     { "id": "unreal-types-and-containers", "manifest": "03-unreal-types-and-containers/chapter.json" },
-    { "id": "gameplay-classes", "manifest": "04-gameplay-classes/chapter.json" }
+    { "id": "gameplay-classes", "manifest": "04-gameplay-classes/chapter.json" },
+    { "id": "unreal-gameplay-framework", "manifest": "05-unreal-gameplay-framework/chapter.json" }
   ]
 }

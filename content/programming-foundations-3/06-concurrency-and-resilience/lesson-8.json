@@ -1,0 +1,12 @@
+{
+  "id": "pf3-8",
+  "title": "Timeouts, Retries and Resilience",
+  "introduction": "Reliable systems bound waiting, retry selectively and prevent one failing dependency from exhausting everything else.",
+  "content": "lesson-8.md",
+  "learningOutcomes": ["Choose a meaningful timeout.", "Apply bounded retry with backoff.", "Explain circuit breaking and graceful degradation."],
+  "activities": [
+    { "id": "pf3-8-a1", "type": "multiple-choice", "question": "Which failure is most suitable for a bounded retry?", "options": ["A temporary service-unavailable response", "Invalid user data", "A permanent permission denial", "A syntax error"], "correctIndex": 0, "explanation": "Transient failures may recover; permanent failures need correction rather than repetition." },
+    { "id": "pf3-8-a2", "type": "true-false", "question": "Unlimited immediate retries can make an outage worse.", "correct": true, "explanation": "Retry storms add load to an already failing dependency." },
+    { "id": "pf3-8-a3", "type": "fill-blank", "question": "Increasing the delay between retries is called ___.", "acceptedAnswers": ["backoff", "exponential backoff"], "explanation": "Backoff reduces pressure and gives a dependency time to recover." }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "id": "input-text-and-validation",
+  "title": "Input, Text and Validation",
+  "description": "Accept useful input, reject invalid values and work confidently with text.",
+  "lessons": [
+    { "id": "pf1-5", "title": "Reading and Validating Input", "file": "lesson-5.json", "version": 1, "estimatedMinutes": 20 },
+    { "id": "pf1-6", "title": "Working with Text", "file": "lesson-6.json", "version": 1, "estimatedMinutes": 20 }
+  ]
+}

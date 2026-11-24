@@ -1,0 +1,12 @@
+{
+  "id": "pf3-10",
+  "title": "Advanced Foundations Capstone",
+  "introduction": "The final capstone demonstrates end-to-end engineering judgement under explicit correctness and operational constraints.",
+  "content": "lesson-10.md",
+  "learningOutcomes": ["Design a service with data and external boundaries.", "Plan security, resilience and observability.", "Present measurable evidence and trade-offs."],
+  "activities": [
+    { "id": "pf3-10-a1", "type": "multiple-choice", "question": "Which capstone evidence is strongest?", "options": ["Reproducible tests and measurements tied to requirements", "A claim that it seems fast", "An undocumented screenshot", "The number of files"], "correctIndex": 0, "explanation": "Reproducible evidence connects implementation results to explicit requirements." },
+    { "id": "pf3-10-a2", "type": "true-false", "question": "Operational and security constraints belong in the initial capstone scope.", "correct": true, "explanation": "They affect architecture and cannot be reliably bolted on after every design decision." },
+    { "id": "pf3-10-a3", "type": "ordering", "question": "Order the capstone lifecycle.", "items": [{ "id": "pf310-operate", "text": "Deploy, observe and evaluate" }, { "id": "pf310-design", "text": "Define risks, requirements and architecture" }, { "id": "pf310-build", "text": "Build verified vertical slices" }, { "id": "pf310-evidence", "text": "Collect security, correctness and performance evidence" }], "correctOrder": ["pf310-design", "pf310-build", "pf310-evidence", "pf310-operate"], "explanation": "Design the constraints, build incrementally, gather evidence and then operate and evaluate." }
+  ]
+}

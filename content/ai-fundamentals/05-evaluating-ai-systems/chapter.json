@@ -1,0 +1,9 @@
+{
+  "id": "evaluating-ai-systems",
+  "title": "Evaluating AI Systems",
+  "description": "Measure model behaviour and combine AI with retrieval, tools and human oversight.",
+  "lessons": [
+    { "id": "ai-5-1", "title": "Evaluation, Metrics and Test Sets", "file": "lesson-5-1.json", "version": 1, "estimatedMinutes": 20 },
+    { "id": "ai-5-2", "title": "Grounding, Tools and Human Review", "file": "lesson-5-2.json", "version": 1, "estimatedMinutes": 20 }
+  ]
+}

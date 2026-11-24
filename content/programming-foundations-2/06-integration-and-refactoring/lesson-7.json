@@ -1,0 +1,12 @@
+{
+  "id": "pf2-7",
+  "title": "Integration Tests and Test Doubles",
+  "introduction": "Unit tests isolate focused behaviour; integration tests verify that real components agree at their boundaries.",
+  "content": "lesson-7.md",
+  "learningOutcomes": ["Choose an appropriate test scope.", "Use a test double at a slow or unreliable boundary.", "Keep tests deterministic and independent."],
+  "activities": [
+    { "id": "pf2-7-a1", "type": "multiple-choice", "question": "Which test best checks that application code and a real database schema agree?", "options": ["An integration test", "A spelling check", "A unit test with no database", "A comment"], "correctIndex": 0, "explanation": "An integration test crosses the real boundary and can reveal contract mismatches." },
+    { "id": "pf2-7-a2", "type": "true-false", "question": "Every unit test should call a live public network service.", "correct": false, "explanation": "Live services make focused tests slow and unreliable; controlled substitutes usually fit unit tests better." },
+    { "id": "pf2-7-a3", "type": "fill-blank", "question": "A controlled replacement used during a test is a test ___.", "acceptedAnswers": ["double"], "explanation": "Stubs, fakes and mocks are kinds of test doubles with different purposes." }
+  ]
+}

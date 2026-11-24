@@ -1,0 +1,9 @@
+{
+  "id": "developer-tools-and-capstone",
+  "title": "Developer Tools and Capstone",
+  "description": "Use an editor, terminal and version control to deliver a complete beginner project.",
+  "lessons": [
+    { "id": "pf1-9", "title": "Editor, Terminal and Git Basics", "file": "lesson-9.json", "version": 1, "estimatedMinutes": 20 },
+    { "id": "pf1-10", "title": "Foundations Capstone", "file": "lesson-10.json", "version": 1, "estimatedMinutes": 20 }
+  ]
+}

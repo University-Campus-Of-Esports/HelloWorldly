@@ -1,0 +1,12 @@
+{
+  "id": "pf1-7",
+  "title": "Lists and Iteration",
+  "introduction": "A list groups related values so one algorithm can process any number of items.",
+  "content": "lesson-7.md",
+  "learningOutcomes": ["Create and update a list.", "Iterate safely over every item.", "Use accumulators to calculate a result."],
+  "activities": [
+    { "id": "pf1-7-a1", "type": "multiple-choice", "question": "Which loop is clearest when every list item should be processed once?", "options": ["A for-each loop", "An unrelated infinite loop", "A single if", "No control structure"], "correctIndex": 0, "explanation": "A for-each loop expresses traversal of every item without manual position management." },
+    { "id": "pf1-7-a2", "type": "fill-blank", "question": "A variable that collects a running total is an ___.", "acceptedAnswers": ["accumulator"], "explanation": "An accumulator is updated during iteration to build a result such as a total." },
+    { "id": "pf1-7-a3", "type": "true-false", "question": "Removing items while traversing the same list can require special care.", "correct": true, "explanation": "Removal can shift positions or invalidate an iterator, causing skipped items or errors." }
+  ]
+}

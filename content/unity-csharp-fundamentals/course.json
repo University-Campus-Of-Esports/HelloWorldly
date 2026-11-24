@@ -8,7 +8,7 @@
   "topics": ["programming", "c#", "unity", "game development"],
   "difficulty": "beginner",
   "series": { "id": "unity-csharp", "part": 1, "label": "I" },
-  "estimatedMinutes": 90,
+  "estimatedMinutes": 130,
   "prerequisites": ["Programming Foundations I or equivalent"],
   "tools": ["Unity", "C# editor"],
   "status": "published",
@@ -20,6 +20,7 @@
     { "id": "csharp-foundations", "manifest": "01-csharp-foundations/chapter.json" },
     { "id": "decisions-and-methods", "manifest": "02-decisions-and-methods/chapter.json" },
     { "id": "collections-and-components", "manifest": "03-collections-and-components/chapter.json" },
-    { "id": "unity-gameplay-scripts", "manifest": "04-unity-gameplay-scripts/chapter.json" }
+    { "id": "unity-gameplay-scripts", "manifest": "04-unity-gameplay-scripts/chapter.json" },
+    { "id": "unity-player-experience", "manifest": "05-unity-player-experience/chapter.json" }
   ]
 }

@@ -97,15 +97,16 @@ function validateLesson(entry, chapterFile) {
 
 function validateChapter(entry, courseFile) {
   const chapterFile = resolveFile(courseFile, entry.manifest, `chapter ${entry.id} manifest`);
-  if (!chapterFile) return;
+  if (!chapterFile) return 0;
   const chapter = readJSON(chapterFile);
-  if (!chapter) return;
+  if (!chapter) return 0;
   if (chapter.id !== entry.id) fail(chapterFile, `chapter id does not match course entry "${entry.id}"`);
   uniqueId(chapter.id, chapterFile, "chapter");
   requiredString(chapter.title, chapterFile, "chapter title");
   requiredString(chapter.description, chapterFile, "chapter description");
   if (!Array.isArray(chapter.lessons) || !chapter.lessons.length) fail(chapterFile, "chapter needs lessons");
   else chapter.lessons.forEach(lesson => validateLesson(lesson, chapterFile));
+  return Array.isArray(chapter.lessons) ? chapter.lessons.length : 0;
 }
 
 function validateCourse(entry, indexFile) {
@@ -127,7 +128,7 @@ function validateCourse(entry, indexFile) {
   if (!course.series || typeof course.series.id !== "string" || !Number.isInteger(course.series.part) || course.series.part < 1 || typeof course.series.label !== "string") fail(courseFile, "course needs a valid series object");
   stringArray(course.prerequisites, courseFile, "prerequisites", false);
   stringArray(course.tools, courseFile, "tools", false);
-  if (!Array.isArray(course.furtherStudy) || !course.furtherStudy.length) fail(courseFile, "furtherStudy must be a non-empty array");
+  if (!Array.isArray(course.furtherStudy) || course.furtherStudy.length < 2) fail(courseFile, "furtherStudy must contain at least two resources");
   else course.furtherStudy.forEach((resource, index) => {
     requiredString(resource.title, courseFile, `furtherStudy[${index}] title`);
     requiredString(resource.description, courseFile, `furtherStudy[${index}] description`);
@@ -137,7 +138,10 @@ function validateCourse(entry, indexFile) {
     } catch (_) { fail(courseFile, `furtherStudy[${index}] must use a valid HTTPS URL`); }
   });
   if (!Array.isArray(course.chapters) || !course.chapters.length) fail(courseFile, "course needs chapters");
-  else course.chapters.forEach(chapter => validateChapter(chapter, courseFile));
+  else {
+    const courseLessonCount = course.chapters.reduce((total, chapter) => total + validateChapter(chapter, courseFile), 0);
+    if (course.status === "published" && courseLessonCount < 10) fail(courseFile, "a published full course must contain at least ten lessons");
+  }
 }
 
 const indexFile = path.join(contentRoot, "courses.json");

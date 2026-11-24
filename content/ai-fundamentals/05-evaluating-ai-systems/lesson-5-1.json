@@ -1,0 +1,12 @@
+{
+  "id": "ai-5-1",
+  "title": "Evaluation, Metrics and Test Sets",
+  "introduction": "An AI system should be judged with representative examples and metrics connected to its real purpose.",
+  "content": "lesson-5-1.md",
+  "learningOutcomes": ["Separate training, validation and test data.", "Compare accuracy, precision and recall.", "Recognise distribution shift and subgroup evaluation."],
+  "activities": [
+    { "id": "ai-5-1-a1", "type": "multiple-choice", "question": "Which data should provide the final unbiased evaluation?", "options": ["A held-out test set", "The training examples repeatedly inspected", "Only one favourite example", "Data copied from the model output"], "correctIndex": 0, "explanation": "A held-out test set estimates behaviour on examples not used to fit or tune the model." },
+    { "id": "ai-5-1-a2", "type": "true-false", "question": "High overall accuracy guarantees equally good results for every subgroup.", "correct": false, "explanation": "Aggregate performance can hide serious errors for smaller or differently represented groups." },
+    { "id": "ai-5-1-a3", "type": "fill-blank", "question": "The proportion of flagged cases that are actually positive is ___.", "acceptedAnswers": ["precision"], "explanation": "Precision asks how many positive predictions were correct." }
+  ]
+}

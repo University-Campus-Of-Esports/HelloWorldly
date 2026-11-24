@@ -1,0 +1,12 @@
+{
+  "id": "pf1-9",
+  "title": "Editor, Terminal and Git Basics",
+  "introduction": "Programming tools help you navigate files, run code, inspect errors and preserve working versions.",
+  "content": "lesson-9.md",
+  "learningOutcomes": ["Describe a basic edit-run-debug cycle.", "Navigate projects using paths and a terminal.", "Create small meaningful version-control commits."],
+  "activities": [
+    { "id": "pf1-9-a1", "type": "ordering", "question": "Order a basic development cycle.", "items": [{ "id": "pf19-debug", "text": "Inspect and debug failures" }, { "id": "pf19-edit", "text": "Make a focused edit" }, { "id": "pf19-run", "text": "Run or test the program" }, { "id": "pf19-review", "text": "Review the result" }], "correctOrder": ["pf19-edit", "pf19-run", "pf19-review", "pf19-debug"], "explanation": "Edit, run, review, and debug when the result differs from expectations." },
+    { "id": "pf1-9-a2", "type": "multiple-choice", "question": "What should a beginner commit contain?", "options": ["One coherent working change", "Every file on the computer", "Passwords and API keys", "Only unexplained temporary files"], "correctIndex": 0, "explanation": "A small coherent commit is easier to understand and restore." },
+    { "id": "pf1-9-a3", "type": "true-false", "question": "An absolute path and a relative path always begin from the same place.", "correct": false, "explanation": "An absolute path starts from a filesystem root; a relative path starts from a current location." }
+  ]
+}

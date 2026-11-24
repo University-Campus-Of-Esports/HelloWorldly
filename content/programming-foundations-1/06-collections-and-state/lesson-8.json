@@ -1,0 +1,12 @@
+{
+  "id": "pf1-8",
+  "title": "Scope, Lifetime and State",
+  "introduction": "Scope controls where a name can be used, while lifetime controls how long its value exists.",
+  "content": "lesson-8.md",
+  "learningOutcomes": ["Explain local and wider scope.", "Distinguish scope from lifetime.", "Reduce unnecessary shared mutable state."],
+  "activities": [
+    { "id": "pf1-8-a1", "type": "multiple-choice", "question": "Where should a temporary calculation variable usually be declared?", "options": ["In the smallest useful local scope", "As global state", "In every file", "Inside an unrelated function"], "correctIndex": 0, "explanation": "Narrow scope makes dependencies clear and prevents unrelated code from changing the value." },
+    { "id": "pf1-8-a2", "type": "true-false", "question": "Scope and lifetime always mean exactly the same thing.", "correct": false, "explanation": "Scope concerns name visibility; lifetime concerns how long a value or object exists." },
+    { "id": "pf1-8-a3", "type": "fill-blank", "question": "State that many unrelated functions can change is often called ___ state.", "acceptedAnswers": ["global", "shared global"], "explanation": "Global mutable state creates hidden dependencies and is difficult to reason about." }
+  ]
+}

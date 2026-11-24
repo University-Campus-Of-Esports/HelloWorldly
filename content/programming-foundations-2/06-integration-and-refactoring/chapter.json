@@ -1,0 +1,9 @@
+{
+  "id": "integration-and-refactoring",
+  "title": "Integration Testing and Refactoring",
+  "description": "Test collaborating components and improve design without changing behaviour.",
+  "lessons": [
+    { "id": "pf2-7", "title": "Integration Tests and Test Doubles", "file": "lesson-7.json", "version": 1, "estimatedMinutes": 20 },
+    { "id": "pf2-8", "title": "Refactoring Safely", "file": "lesson-8.json", "version": 1, "estimatedMinutes": 20 }
+  ]
+}

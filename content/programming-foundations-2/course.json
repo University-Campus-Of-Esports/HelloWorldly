@@ -8,7 +8,7 @@
   "topics": ["programming", "data structures", "object-oriented programming", "testing", "version control"],
   "difficulty": "intermediate",
   "series": { "id": "programming-foundations", "part": 2, "label": "II" },
-  "estimatedMinutes": 90,
+  "estimatedMinutes": 210,
   "prerequisites": ["Programming Foundations I"],
   "tools": ["text editor", "programming language runtime", "Git"],
   "status": "published",
@@ -20,6 +20,9 @@
     { "id": "collections-and-models", "manifest": "01-collections-and-models/chapter.json" },
     { "id": "classes-and-objects", "manifest": "02-classes-and-objects/chapter.json" },
     { "id": "errors-files-and-modules", "manifest": "03-errors-files-and-modules/chapter.json" },
-    { "id": "tests-version-control-project", "manifest": "04-tests-version-control-project/chapter.json" }
+    { "id": "tests-version-control-project", "manifest": "04-tests-version-control-project/chapter.json" },
+    { "id": "data-transformations-and-abstractions", "manifest": "05-data-transformations-and-abstractions/chapter.json" },
+    { "id": "integration-and-refactoring", "manifest": "06-integration-and-refactoring/chapter.json" },
+    { "id": "collaboration-and-capstone", "manifest": "07-collaboration-and-capstone/chapter.json" }
   ]
 }

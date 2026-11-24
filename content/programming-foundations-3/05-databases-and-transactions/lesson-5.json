@@ -1,0 +1,12 @@
+{
+  "id": "pf3-5",
+  "title": "Relational Data and Queries",
+  "introduction": "A relational database organises durable data into tables connected by keys and queried as sets.",
+  "content": "lesson-5.md",
+  "learningOutcomes": ["Model entities with primary and foreign keys.", "Explain selection, projection and joins.", "Use parameterised queries for untrusted values."],
+  "activities": [
+    { "id": "pf3-5-a1", "type": "multiple-choice", "question": "What identifies one row reliably?", "options": ["A primary key", "Its display order", "Its screen colour", "A comment"], "correctIndex": 0, "explanation": "A primary key uniquely and stably identifies a row." },
+    { "id": "pf3-5-a2", "type": "true-false", "question": "A foreign key can represent a relationship to another table.", "correct": true, "explanation": "A foreign key refers to a candidate or primary key in a related table." },
+    { "id": "pf3-5-a3", "type": "fill-blank", "question": "Combining related rows from two tables is commonly called a ___.", "acceptedAnswers": ["join"], "explanation": "A join combines rows according to a relationship or condition." }
+  ]
+}

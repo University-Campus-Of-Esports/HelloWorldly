@@ -1,0 +1,12 @@
+{
+  "id": "ai-5-2",
+  "title": "Grounding, Tools and Human Review",
+  "introduction": "Useful AI applications combine a model with trusted information, constrained tools and appropriate human decisions.",
+  "content": "lesson-5-2.md",
+  "learningOutcomes": ["Explain retrieval grounding.", "Describe risks when a model can call tools.", "Place human review according to consequence and uncertainty."],
+  "activities": [
+    { "id": "ai-5-2-a1", "type": "multiple-choice", "question": "What is the purpose of retrieval grounding?", "options": ["Provide relevant source material for the current response", "Guarantee the model is always correct", "Remove the need for evaluation", "Train a new model for every question"], "correctIndex": 0, "explanation": "Retrieval supplies relevant external context, but the answer still needs evaluation." },
+    { "id": "ai-5-2-a2", "type": "true-false", "question": "An AI agent should receive every available permission in case it needs one.", "correct": false, "explanation": "Least privilege limits tools and data to what the task genuinely requires." },
+    { "id": "ai-5-2-a3", "type": "ordering", "question": "Order a grounded answer workflow.", "items": [{ "id": "ai52-check", "text": "Check the answer against sources and policy" }, { "id": "ai52-retrieve", "text": "Retrieve relevant trusted material" }, { "id": "ai52-answer", "text": "Generate an answer using that context" }, { "id": "ai52-query", "text": "Receive and clarify the request" }], "correctOrder": ["ai52-query", "ai52-retrieve", "ai52-answer", "ai52-check"], "explanation": "Clarify, retrieve, generate with context, then verify the result." }
+  ]
+}

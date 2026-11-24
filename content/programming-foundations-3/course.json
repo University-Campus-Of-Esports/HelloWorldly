@@ -8,7 +8,7 @@
   "topics": ["programming", "algorithms", "software architecture", "apis", "security", "performance"],
   "difficulty": "advanced",
   "series": { "id": "programming-foundations", "part": 3, "label": "III" },
-  "estimatedMinutes": 100,
+  "estimatedMinutes": 220,
   "prerequisites": ["Programming Foundations II"],
   "tools": ["programming language runtime", "Git", "debugger", "profiler"],
   "status": "published",
@@ -20,6 +20,9 @@
     { "id": "algorithms-and-complexity", "manifest": "01-algorithms-and-complexity/chapter.json" },
     { "id": "architecture-and-design", "manifest": "02-architecture-and-design/chapter.json" },
     { "id": "apis-async-and-security", "manifest": "03-apis-async-and-security/chapter.json" },
-    { "id": "performance-and-capstone", "manifest": "04-performance-and-capstone/chapter.json" }
+    { "id": "performance-and-capstone", "manifest": "04-performance-and-capstone/chapter.json" },
+    { "id": "databases-and-transactions", "manifest": "05-databases-and-transactions/chapter.json" },
+    { "id": "concurrency-and-resilience", "manifest": "06-concurrency-and-resilience/chapter.json" },
+    { "id": "delivery-and-operations", "manifest": "07-delivery-and-operations/chapter.json" }
   ]
 }

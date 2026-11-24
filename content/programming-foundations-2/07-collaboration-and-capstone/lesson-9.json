@@ -1,0 +1,12 @@
+{
+  "id": "pf2-9",
+  "title": "Branches, Reviews and Merges",
+  "introduction": "Collaborative development depends on small changes, explicit review and careful integration.",
+  "content": "lesson-9.md",
+  "learningOutcomes": ["Use a short-lived feature branch.", "Prepare a reviewable change.", "Resolve merge conflicts by understanding intent."],
+  "activities": [
+    { "id": "pf2-9-a1", "type": "multiple-choice", "question": "Which change is easiest to review?", "options": ["A focused change with tests and context", "Thousands of unrelated edits", "A change containing secrets", "A change with no stated purpose"], "correctIndex": 0, "explanation": "Focused changes let reviewers understand intent and verify behaviour." },
+    { "id": "pf2-9-a2", "type": "true-false", "question": "A merge conflict should be resolved by blindly choosing one side.", "correct": false, "explanation": "The resolver must understand both intended changes and produce a coherent combined result." },
+    { "id": "pf2-9-a3", "type": "ordering", "question": "Order a basic collaborative workflow.", "items": [{ "id": "pf29-merge", "text": "Merge the approved change" }, { "id": "pf29-branch", "text": "Create a focused branch" }, { "id": "pf29-review", "text": "Request and address review" }, { "id": "pf29-test", "text": "Implement and test small commits" }], "correctOrder": ["pf29-branch", "pf29-test", "pf29-review", "pf29-merge"], "explanation": "Work on a focused branch, verify it, review it and then integrate it." }
+  ]
+}

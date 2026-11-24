@@ -46,6 +46,10 @@ p, li { max-width: 72ch; }
 .continue-card { margin: 1.5rem 0 2rem; border-color: var(--accent); }
 .continue-card h2 { margin: 0; }
 .inline-button { display: inline-block; margin-top: .5rem; text-decoration: none; }
+.daily-practice-link { margin-left: .5rem; }
+.practice-status { margin: 1rem 0; padding: .8rem; border: 1px solid var(--border); border-radius: var(--radius); background: var(--panel); }
+.practice-question { margin: 1.25rem 0; }
+.practice-source { margin: 0 0 -.65rem .8rem; color: var(--muted); font-size: .85rem; }
 .filters { display: grid; gap: .8rem; margin: 1rem 0 .4rem; padding: 1rem; border: 1px solid var(--border); border-radius: var(--radius); background: var(--panel); }
 .filters label { display: grid; gap: .3rem; color: var(--muted); font-size: .85rem; font-weight: 700; }
 .filter-select { width: 100%; padding: .65rem; border: 1px solid var(--border); border-radius: .4rem; background: #0c1012; color: var(--text); }

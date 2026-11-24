@@ -1,0 +1,12 @@
+{
+  "id": "pf3-6",
+  "title": "Transactions and Data Integrity",
+  "introduction": "Transactions group related operations so observers do not see a partially completed update.",
+  "content": "lesson-6.md",
+  "learningOutcomes": ["Explain atomic transaction behaviour.", "Recognise consistency risks from concurrent updates.", "Design a retry-safe operation."],
+  "activities": [
+    { "id": "pf3-6-a1", "type": "multiple-choice", "question": "A transfer debits one account but cannot credit the other. What should an atomic transaction do?", "options": ["Roll back the debit", "Keep half the transfer", "Delete both accounts", "Ignore the failure"], "correctIndex": 0, "explanation": "Atomicity makes the related changes succeed together or have no effect." },
+    { "id": "pf3-6-a2", "type": "true-false", "question": "Two concurrent updates can overwrite one another without suitable coordination.", "correct": true, "explanation": "A lost update occurs when both operations read old state and one later overwrites the other's result." },
+    { "id": "pf3-6-a3", "type": "fill-blank", "question": "An operation safe to repeat without applying the effect twice is ___.", "acceptedAnswers": ["idempotent"], "explanation": "Idempotency makes retries safer after uncertain failures." }
+  ]
+}

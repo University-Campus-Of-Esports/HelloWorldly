@@ -1,0 +1,12 @@
+{
+  "id": "pf1-5",
+  "title": "Reading and Validating Input",
+  "introduction": "User input begins as untrusted data and must be converted and checked before a program relies on it.",
+  "content": "lesson-5.md",
+  "learningOutcomes": ["Distinguish parsing from validation.", "Design a helpful input-validation loop.", "Handle boundaries and invalid values explicitly."],
+  "activities": [
+    { "id": "pf1-5-a1", "type": "multiple-choice", "question": "What does parsing do?", "options": ["Converts input text into a required type", "Proves every value is acceptable", "Displays a menu", "Repeats a function forever"], "correctIndex": 0, "explanation": "Parsing interprets text as a type such as a number; validation then checks whether the value is permitted." },
+    { "id": "pf1-5-a2", "type": "true-false", "question": "A successfully parsed age of -4 can still fail validation.", "correct": true, "explanation": "The text can be a valid integer while the resulting value violates the program's rules." },
+    { "id": "pf1-5-a3", "type": "ordering", "question": "Order a safe input process.", "items": [{ "id": "pf15-use", "text": "Use the validated value" }, { "id": "pf15-read", "text": "Read input text" }, { "id": "pf15-check", "text": "Check the allowed range" }, { "id": "pf15-parse", "text": "Attempt to parse the required type" }], "correctOrder": ["pf15-read", "pf15-parse", "pf15-check", "pf15-use"], "explanation": "Read, parse, validate and only then use the value." }
+  ]
+}

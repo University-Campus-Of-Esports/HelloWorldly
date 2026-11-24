@@ -1,0 +1,12 @@
+{
+  "id": "pf2-5",
+  "title": "Filter, Map and Reduce",
+  "introduction": "Common collection transformations communicate intent more directly than one large loop.",
+  "content": "lesson-5.md",
+  "learningOutcomes": ["Distinguish filtering, mapping and reducing.", "Compose a readable transformation pipeline.", "Recognise side effects that make a pipeline harder to reason about."],
+  "activities": [
+    { "id": "pf2-5-a1", "type": "multiple-choice", "question": "Which operation keeps only values that satisfy a condition?", "options": ["Filter", "Map", "Reduce", "Parse"], "correctIndex": 0, "explanation": "Filtering selects a subset without changing the selected values." },
+    { "id": "pf2-5-a2", "type": "fill-blank", "question": "Turning every price into a price including tax is a ___ operation.", "acceptedAnswers": ["map", "mapping"], "explanation": "Mapping transforms each input item into a corresponding output item." },
+    { "id": "pf2-5-a3", "type": "true-false", "question": "A reduce operation can combine a collection into one total.", "correct": true, "explanation": "Reduce, fold or aggregate operations update an accumulator across the collection." }
+  ]
+}

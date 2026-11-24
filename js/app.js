@@ -41,6 +41,54 @@
     return wrap;
   }
 
+  function localDateKey() {
+    const today = new Date();
+    const month = String(today.getMonth() + 1).padStart(2, "0");
+    const day = String(today.getDate()).padStart(2, "0");
+    return `${today.getFullYear()}-${month}-${day}`;
+  }
+
+  function seededRandom(seedText) {
+    let seed = 2166136261;
+    for (let index = 0; index < seedText.length; index += 1) {
+      seed ^= seedText.charCodeAt(index);
+      seed = Math.imul(seed, 16777619);
+    }
+    return function random() {
+      seed += 0x6D2B79F5;
+      let value = seed;
+      value = Math.imul(value ^ value >>> 15, value | 1);
+      value ^= value + Math.imul(value ^ value >>> 7, value | 61);
+      return ((value ^ value >>> 14) >>> 0) / 4294967296;
+    };
+  }
+
+  function shuffle(values, random) {
+    const result = values.slice();
+    for (let index = result.length - 1; index > 0; index -= 1) {
+      const target = Math.floor(random() * (index + 1));
+      [result[index], result[target]] = [result[target], result[index]];
+    }
+    return result;
+  }
+
+  function dailyActivity(source, date, random) {
+    const activity = JSON.parse(JSON.stringify(source));
+    activity.id = `daily-${date}-${source.id}`;
+    if (activity.type === "multiple-choice") {
+      const options = activity.options.map((text, index) => ({ text, correct: index === activity.correctIndex }));
+      const shuffled = shuffle(options, random);
+      activity.options = shuffled.map(option => option.text);
+      activity.correctIndex = shuffled.findIndex(option => option.correct);
+    } else if (activity.type === "ordering") {
+      activity.items = shuffle(activity.items, random);
+      if (activity.items.every((item, index) => item.id === activity.correctOrder[index])) {
+        activity.items.push(activity.items.shift());
+      }
+    }
+    return activity;
+  }
+
   async function initialise() {
     const indexUrl = new URL("content/courses.json", document.baseURI).href;
     const index = await Content.loadJSON(indexUrl);
@@ -150,6 +198,9 @@
       continueLink.className = "button inline-button";
       fragment.append(continueLink);
     }
+    const practiceLink = link("Today’s practice mix →", `#/course/${encodeURIComponent(course.id)}/practice`);
+    practiceLink.className = "button button-secondary inline-button daily-practice-link";
+    fragment.append(practiceLink);
     course.chapters.forEach((chapter, chapterIndex) => {
       const section = node("section", "chapter");
       const done = Progress.countLessons(chapter.lessons);
@@ -183,7 +234,7 @@
     const reset = node("button", "button button-secondary", "Reset this course");
     reset.type = "button";
     reset.addEventListener("click", () => {
-      if (window.confirm(`Reset progress for ${course.title}?`)) { Progress.resetCourse(lessonEntries.map(item => item.id)); renderCourse(course.id); }
+      if (window.confirm(`Reset progress for ${course.title}?`)) { Progress.resetCourse(lessonEntries.map(item => item.id), course.id); renderCourse(course.id); }
     });
     actions.append(reset); fragment.append(actions);
     app.replaceChildren(fragment); document.title = `${course.title} — HelloWordly`;
@@ -229,6 +280,47 @@
     app.replaceChildren(fragment); document.title = `${lesson.title} — HelloWordly`;
   }
 
+  async function renderDailyPractice(courseId, currentRender) {
+    const course = courseById(courseId);
+    if (!course) throw new Error("That course could not be found.");
+    const date = localDateKey();
+    const random = seededRandom(`${course.id}:${date}`);
+    const lessonSources = await Promise.all(course.chapters.flatMap(chapter => chapter.lessons.map(async entry => ({
+      entry,
+      lesson: await Content.loadLesson(chapter, entry)
+    }))));
+    if (currentRender !== renderNumber) return;
+    const pool = lessonSources.flatMap(source => source.lesson.activities.map(activity => ({ activity, title: source.lesson.title })));
+    const selected = shuffle(pool, random).slice(0, Math.min(6, pool.length)).map(source => ({
+      title: source.title,
+      activity: dailyActivity(source.activity, date, random)
+    }));
+    const fragment = document.createDocumentFragment();
+    const crumbs = node("nav", "breadcrumbs"); crumbs.setAttribute("aria-label", "Breadcrumb");
+    crumbs.append(link("Home", "#/"), document.createTextNode(" / "), link(course.title, `#/course/${encodeURIComponent(course.id)}`), document.createTextNode(" / Daily practice"));
+    fragment.append(crumbs, node("p", "eyebrow", date), node("h1", "", `${course.title}: daily practice`));
+    fragment.append(node("p", "lede", "Six questions are selected and shuffled from across this course. The mix stays consistent today and changes on your next local calendar day."));
+    const status = node("p", "practice-status"); status.setAttribute("role", "status");
+    const area = node("div", "practice-area");
+    selected.forEach(source => {
+      const wrapper = node("div", "practice-question");
+      wrapper.append(node("p", "practice-source", `From: ${source.title}`), Activities.render(source.activity, `daily:${course.id}:${date}`, 1));
+      area.append(wrapper);
+    });
+    function updateStatus() {
+      const completed = selected.filter(source => Progress.isActivityComplete(source.activity.id, 1)).length;
+      status.textContent = completed === selected.length
+        ? `Daily practice complete: ${completed} of ${selected.length}. Come back tomorrow for a new mix.`
+        : `${completed} of ${selected.length} practice activities complete.`;
+      status.className = completed === selected.length ? "practice-status complete-mark" : "practice-status";
+    }
+    area.addEventListener("activitycomplete", updateStatus); updateStatus();
+    fragment.append(status, area);
+    const back = link("Back to course →", `#/course/${encodeURIComponent(course.id)}`); back.className = "button inline-button";
+    fragment.append(back);
+    app.replaceChildren(fragment); document.title = `Daily practice: ${course.title} — HelloWordly`;
+  }
+
   async function route() {
     const currentRender = ++renderNumber;
     showStatus("Loading…");
@@ -238,6 +330,7 @@
       const parts = location.hash.replace(/^#\/?/, "").split("/").filter(Boolean).map(decodeURIComponent);
       if (!parts.length) renderHome();
       else if (parts[0] === "course" && parts.length === 2) renderCourse(parts[1]);
+      else if (parts[0] === "course" && parts[2] === "practice" && parts.length === 3) await renderDailyPractice(parts[1], currentRender);
       else if (parts[0] === "course" && parts[2] === "lesson" && parts.length === 4) await renderLesson(parts[1], parts[3], currentRender);
       else throw new Error("This page does not exist.");
       app.focus({ preventScroll: true }); window.scrollTo(0, 0);

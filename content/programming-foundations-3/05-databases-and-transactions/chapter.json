@@ -1,0 +1,9 @@
+{
+  "id": "databases-and-transactions",
+  "title": "Databases and Transactions",
+  "description": "Model durable data, query it safely and preserve consistency across updates.",
+  "lessons": [
+    { "id": "pf3-5", "title": "Relational Data and Queries", "file": "lesson-5.json", "version": 1, "estimatedMinutes": 20 },
+    { "id": "pf3-6", "title": "Transactions and Data Integrity", "file": "lesson-6.json", "version": 1, "estimatedMinutes": 20 }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "id": "cpp-5-2",
+  "title": "Delegates, UI and Save Games",
+  "introduction": "Delegates notify independent systems, while UI and save objects present or preserve authoritative gameplay state.",
+  "content": "lesson-5-2.md",
+  "learningOutcomes": ["Use delegates for event notification.", "Keep widgets separate from gameplay ownership.", "Store stable values in a SaveGame object."],
+  "activities": [
+    { "id": "cpp-5-2-a1", "type": "multiple-choice", "question": "What is a suitable use for a multicast delegate?", "options": ["Notify UI and audio listeners that health changed", "Own all health state inside a widget", "Replace every function call", "Store a map permanently"], "correctIndex": 0, "explanation": "A multicast delegate broadcasts an event to independent registered listeners." },
+    { "id": "cpp-5-2-a2", "type": "true-false", "question": "A SaveGame object should store raw pointers to temporary world Actors.", "correct": false, "explanation": "Save stable identifiers and values that can reconstruct state, not runtime-only pointers." },
+    { "id": "cpp-5-2-a3", "type": "ordering", "question": "Order a basic load process.", "items": [{ "id": "cpp52-apply", "text": "Apply values to newly created runtime objects" }, { "id": "cpp52-load", "text": "Load the SaveGame data" }, { "id": "cpp52-check", "text": "Validate version and values" }, { "id": "cpp52-world", "text": "Open or initialise the required world" }], "correctOrder": ["cpp52-load", "cpp52-check", "cpp52-world", "cpp52-apply"], "explanation": "Load and validate durable data, prepare the world, then reconstruct runtime state." }
+  ]
+}

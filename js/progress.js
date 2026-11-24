@@ -30,6 +30,11 @@
   function completeActivity(activityId, lessonId, version) {
     const value = read();
     value.activities[activityId] = { lessonId, version: Number(version) || 1, completedAt: Date.now() };
+    const oldestDailyResult = Date.now() - 45 * 24 * 60 * 60 * 1000;
+    Object.keys(value.activities).forEach(id => {
+      const completion = value.activities[id];
+      if (id.startsWith("daily-") && completion.completedAt < oldestDailyResult) delete value.activities[id];
+    });
     write(value);
   }
 
@@ -56,12 +61,12 @@
   }
   function lastVisited() { return read().lastVisited; }
 
-  function resetCourse(lessonIds) {
+  function resetCourse(lessonIds, courseId) {
     const value = read();
     lessonIds.forEach(id => { delete value.lessons[id]; });
     Object.keys(value.activities).forEach(id => {
       const lessonId = value.activities[id] && value.activities[id].lessonId;
-      if (!lessonId || lessonIds.includes(lessonId)) delete value.activities[id];
+      if (!lessonId || lessonIds.includes(lessonId) || lessonId.startsWith(`daily:${courseId}:`)) delete value.activities[id];
     });
     if (value.lastVisited && lessonIds.includes(value.lastVisited.lessonId)) value.lastVisited = null;
     write(value);

@@ -1,0 +1,12 @@
+{
+  "id": "unity-cs-5-2",
+  "title": "Scenes, Persistence and Builds",
+  "introduction": "Scenes organise runtime content, while persistent data and build settings determine what survives transitions and reaches players.",
+  "content": "lesson-5-2.md",
+  "learningOutcomes": ["Load scenes through declared transitions.", "Distinguish scene state from persistent save data.", "Prepare and test a basic player build."],
+  "activities": [
+    { "id": "unity-cs-5-2-a1", "type": "multiple-choice", "question": "Which data should usually be serialised for a save game?", "options": ["Small stable gameplay data such as unlocked levels", "Every temporary component reference", "The current editor window position", "A destroyed object's memory address"], "correctIndex": 0, "explanation": "Save stable data needed to reconstruct progress, not runtime-only references." },
+    { "id": "unity-cs-5-2-a2", "type": "true-false", "question": "A scene must be included in the build configuration before a player build can load it by its configured identity.", "correct": true, "explanation": "The build needs to know which scene assets are available at runtime." },
+    { "id": "unity-cs-5-2-a3", "type": "ordering", "question": "Order a safe save-load flow.", "items": [{ "id": "ucs52-apply", "text": "Apply validated data to a new scene" }, { "id": "ucs52-read", "text": "Read saved data" }, { "id": "ucs52-validate", "text": "Validate version and values" }, { "id": "ucs52-load", "text": "Load the destination scene" }], "correctOrder": ["ucs52-read", "ucs52-validate", "ucs52-load", "ucs52-apply"], "explanation": "Read and validate durable data, load the scene, then reconstruct its runtime state." }
+  ]
+}

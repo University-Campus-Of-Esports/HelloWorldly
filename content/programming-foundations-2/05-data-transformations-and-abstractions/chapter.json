@@ -1,0 +1,9 @@
+{
+  "id": "data-transformations-and-abstractions",
+  "title": "Data Transformations and Abstractions",
+  "description": "Express collection pipelines and reusable behaviour without losing type safety.",
+  "lessons": [
+    { "id": "pf2-5", "title": "Filter, Map and Reduce", "file": "lesson-5.json", "version": 1, "estimatedMinutes": 20 },
+    { "id": "pf2-6", "title": "Generics and Contracts", "file": "lesson-6.json", "version": 1, "estimatedMinutes": 20 }
+  ]
+}

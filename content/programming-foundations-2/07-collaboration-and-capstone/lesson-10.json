@@ -1,0 +1,12 @@
+{
+  "id": "pf2-10",
+  "title": "Intermediate Capstone",
+  "introduction": "Build a persistent, tested application whose modules and collaboration history explain its design.",
+  "content": "lesson-10.md",
+  "learningOutcomes": ["Define an intermediate multi-module project.", "Select unit and integration tests by risk.", "Document architecture and delivery evidence."],
+  "activities": [
+    { "id": "pf2-10-a1", "type": "multiple-choice", "question": "Which capstone requirement demonstrates persistence?", "options": ["Saved data remains after the program restarts", "A local variable exists briefly", "A heading is bold", "A loop runs once"], "correctIndex": 0, "explanation": "Persistence preserves validated state beyond one process execution." },
+    { "id": "pf2-10-a2", "type": "true-false", "question": "A capstone README should include setup and run instructions.", "correct": true, "explanation": "Reproducible setup is part of delivering a usable project." },
+    { "id": "pf2-10-a3", "type": "ordering", "question": "Order the delivery evidence.", "items": [{ "id": "pf210-reflect", "text": "Record limitations and next steps" }, { "id": "pf210-plan", "text": "Define requirements and architecture" }, { "id": "pf210-verify", "text": "Run acceptance and automated checks" }, { "id": "pf210-implement", "text": "Implement vertical slices" }], "correctOrder": ["pf210-plan", "pf210-implement", "pf210-verify", "pf210-reflect"], "explanation": "Plan, build in working slices, verify the result and evaluate it honestly." }
+  ]
+}

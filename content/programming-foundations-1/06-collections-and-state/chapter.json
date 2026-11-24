@@ -1,0 +1,9 @@
+{
+  "id": "collections-and-state",
+  "title": "Collections, Scope and State",
+  "description": "Store groups of values and understand where program state belongs.",
+  "lessons": [
+    { "id": "pf1-7", "title": "Lists and Iteration", "file": "lesson-7.json", "version": 1, "estimatedMinutes": 20 },
+    { "id": "pf1-8", "title": "Scope, Lifetime and State", "file": "lesson-8.json", "version": 1, "estimatedMinutes": 20 }
+  ]
+}
