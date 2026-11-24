@@ -3,7 +3,7 @@
   "title": "C# Foundations",
   "description": "Read Unity scripts and work with values, types and expressions.",
   "lessons": [
-    { "id": "unity-cs-1-1", "title": "Reading a Unity Script", "file": "lesson-1-1.json" },
-    { "id": "unity-cs-1-2", "title": "Variables and Expressions", "file": "lesson-1-2.json" }
+    { "id": "unity-cs-1-1", "title": "Reading a Unity Script", "file": "lesson-1-1.json", "version": 1, "estimatedMinutes": 10 },
+    { "id": "unity-cs-1-2", "title": "Variables and Expressions", "file": "lesson-1-2.json", "version": 1, "estimatedMinutes": 10 }
   ]
 }

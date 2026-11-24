@@ -1,0 +1,8 @@
+{
+  "id": "algorithms-and-complexity",
+  "title": "Algorithms and Complexity",
+  "description": "Compare approaches by correctness, growth and resource use.",
+  "lessons": [
+    { "id": "pf3-1", "title": "Cost, Search and Recursion", "file": "lesson-1.json", "version": 1, "estimatedMinutes": 25 }
+  ]
+}

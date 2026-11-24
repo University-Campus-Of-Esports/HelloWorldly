@@ -1,0 +1,8 @@
+{
+  "id": "classes-and-objects",
+  "title": "Classes and Objects",
+  "description": "Group data with behaviour and protect valid state.",
+  "lessons": [
+    { "id": "pf2-2", "title": "Classes, Objects and Interfaces", "file": "lesson-2.json", "version": 1, "estimatedMinutes": 25 }
+  ]
+}

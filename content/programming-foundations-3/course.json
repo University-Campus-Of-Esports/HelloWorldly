@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "id": "programming-foundations-3",
+  "title": "Programming Foundations III",
+  "description": "Reason about algorithms, architecture, asynchronous systems, security, performance and capstone design.",
+  "overview": "This advanced foundations course connects code-level decisions to whole-system behaviour. You will compare algorithm costs, use recursion deliberately, design boundaries and dependencies, reason about APIs and asynchronous work, protect data, measure performance and plan a capstone. It prepares learners for specialised study rather than attempting to replace a full computer-science programme.",
+  "categories": ["technology"],
+  "topics": ["programming", "algorithms", "software architecture", "apis", "security", "performance"],
+  "difficulty": "advanced",
+  "series": { "id": "programming-foundations", "part": 3, "label": "III" },
+  "estimatedMinutes": 100,
+  "prerequisites": ["Programming Foundations II"],
+  "tools": ["programming language runtime", "Git", "debugger", "profiler"],
+  "status": "published",
+  "furtherStudy": [
+    { "title": "Python documentation", "url": "https://docs.python.org/3/", "description": "Explore language features, libraries, virtual environments and tooling." },
+    { "title": "Pro Git — Distributed Workflows", "url": "https://git-scm.com/book/en/v2/Distributed-Git-Distributed-Workflows", "description": "Continue into collaborative development workflows." }
+  ],
+  "chapters": [
+    { "id": "algorithms-and-complexity", "manifest": "01-algorithms-and-complexity/chapter.json" },
+    { "id": "architecture-and-design", "manifest": "02-architecture-and-design/chapter.json" },
+    { "id": "apis-async-and-security", "manifest": "03-apis-async-and-security/chapter.json" },
+    { "id": "performance-and-capstone", "manifest": "04-performance-and-capstone/chapter.json" }
+  ]
+}

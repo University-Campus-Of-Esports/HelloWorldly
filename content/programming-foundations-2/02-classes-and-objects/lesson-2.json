@@ -1,0 +1,12 @@
+{
+  "id": "pf2-2",
+  "title": "Classes, Objects and Interfaces",
+  "introduction": "Object-oriented design groups related state and behaviour behind a deliberate public interface.",
+  "content": "lesson-2.md",
+  "learningOutcomes": ["Distinguish a class from an object.", "Explain encapsulation and public interfaces.", "Prefer composition when objects have independent responsibilities."],
+  "activities": [
+    { "id": "pf2-2-a1", "type": "multiple-choice", "question": "What is an object?", "options": ["A particular instance created from a type or class", "Every class in a project", "A loop condition", "A source-control branch"], "correctIndex": 0, "explanation": "A class describes a form; an object is one instance with its own current state." },
+    { "id": "pf2-2-a2", "type": "true-false", "question": "Encapsulation can protect an object's valid state.", "correct": true, "explanation": "Controlled operations can enforce rules instead of allowing arbitrary state changes." },
+    { "id": "pf2-2-a3", "type": "multiple-choice", "question": "A car uses an engine with a separate responsibility. Which relationship usually fits?", "options": ["Composition", "A global variable", "A syntax error", "Recursion"], "correctIndex": 0, "explanation": "Composition builds behaviour from collaborating objects with distinct responsibilities." }
+  ]
+}

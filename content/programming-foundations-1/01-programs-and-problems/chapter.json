@@ -1,0 +1,8 @@
+{
+  "id": "programs-and-problems",
+  "title": "Programs and Problem Solving",
+  "description": "Turn a goal into inputs, outputs and precise steps.",
+  "lessons": [
+    { "id": "pf1-1", "title": "From Problems to Algorithms", "file": "lesson-1.json", "version": 1, "estimatedMinutes": 20 }
+  ]
+}

@@ -1,8 +1,21 @@
 {
   "schemaVersion": 1,
   "id": "cpp-fundamentals",
-  "title": "C++ Fundamentals",
-  "description": "Learn core C++ through Unreal Engine types, conventions and gameplay-focused examples.",
+  "title": "Unreal C++ Essentials",
+  "description": "Learn introductory C++ through Unreal Engine types, conventions and gameplay-focused examples.",
+  "overview": "This focused course introduces the C++ syntax and Unreal Engine concepts needed to read and modify small gameplay classes. It is an engine-oriented starting point rather than a complete treatment of standard C++. Programming Foundations I is recommended for complete beginners.",
+  "categories": ["technology", "games"],
+  "topics": ["programming", "c++", "unreal engine", "game development"],
+  "difficulty": "beginner",
+  "series": { "id": "unreal-cpp", "part": 1, "label": "I" },
+  "estimatedMinutes": 90,
+  "prerequisites": ["Programming Foundations I or equivalent"],
+  "tools": ["Unreal Engine", "C++ editor"],
+  "status": "published",
+  "furtherStudy": [
+    { "title": "Unreal Engine C++ Programming", "url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/programming-with-cplusplus-in-unreal-engine", "description": "Epic's official guide to programming Unreal Engine with C++." },
+    { "title": "C++ language reference", "url": "https://en.cppreference.com/w/cpp/language", "description": "A detailed reference for standard C++ language features." }
+  ],
   "chapters": [
     { "id": "cpp-foundations", "manifest": "01-cpp-foundations/chapter.json" },
     { "id": "decisions-and-functions", "manifest": "02-decisions-and-functions/chapter.json" },

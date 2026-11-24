@@ -1,8 +1,21 @@
 {
   "schemaVersion": 1,
   "id": "unity-csharp-fundamentals",
-  "title": "C# Fundamentals for Unity",
-  "description": "Learn core C# through Unity components, conventions and gameplay-focused examples.",
+  "title": "Unity C# Essentials",
+  "description": "Learn introductory C# through Unity components, conventions and gameplay-focused examples.",
+  "overview": "This focused course introduces the C# syntax and Unity concepts needed to read and modify small gameplay scripts. It connects variables, decisions and methods to GameObjects, components and the MonoBehaviour lifecycle. Programming Foundations I is recommended for complete beginners.",
+  "categories": ["technology", "games"],
+  "topics": ["programming", "c#", "unity", "game development"],
+  "difficulty": "beginner",
+  "series": { "id": "unity-csharp", "part": 1, "label": "I" },
+  "estimatedMinutes": 90,
+  "prerequisites": ["Programming Foundations I or equivalent"],
+  "tools": ["Unity", "C# editor"],
+  "status": "published",
+  "furtherStudy": [
+    { "title": "Microsoft C# documentation", "url": "https://learn.microsoft.com/en-us/dotnet/csharp/", "description": "Official tutorials and reference material for the C# language." },
+    { "title": "Unity MonoBehaviour reference", "url": "https://docs.unity3d.com/ScriptReference/MonoBehaviour.html", "description": "Unity's reference for component scripts and lifecycle messages." }
+  ],
   "chapters": [
     { "id": "csharp-foundations", "manifest": "01-csharp-foundations/chapter.json" },
     { "id": "decisions-and-methods", "manifest": "02-decisions-and-methods/chapter.json" },

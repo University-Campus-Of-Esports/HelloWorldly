@@ -37,6 +37,22 @@ A course manifest supplies display information and ordered chapter manifests:
   "id": "web-basics",
   "title": "Web Basics",
   "description": "Learn how simple web pages work.",
+  "overview": "A fuller description of the course scope, audience and destination.",
+  "categories": ["technology"],
+  "topics": ["web", "html"],
+  "difficulty": "beginner",
+  "series": { "id": "web-development", "part": 1, "label": "I" },
+  "estimatedMinutes": 90,
+  "prerequisites": [],
+  "tools": ["web browser", "text editor"],
+  "status": "published",
+  "furtherStudy": [
+    {
+      "title": "MDN Learn Web Development",
+      "url": "https://developer.mozilla.org/en-US/docs/Learn_web_development",
+      "description": "Tutorials and reference material for continued study."
+    }
+  ],
   "chapters": [
     { "id": "html", "manifest": "01-html/chapter.json" }
   ]
@@ -51,12 +67,14 @@ A chapter manifest supplies display information and ordered lesson files:
   "title": "HTML",
   "description": "Structure content with HTML.",
   "lessons": [
-    { "id": "html-elements", "title": "HTML Elements", "file": "lesson-1.json" }
+    { "id": "html-elements", "title": "HTML Elements", "file": "lesson-1.json", "version": 1, "estimatedMinutes": 10 }
   ]
 }
 ```
 
-The `id` in every manifest entry must match the `id` inside the referenced file.
+The `id` in every manifest entry must match the `id` inside the referenced file. Increment a lesson's positive integer `version` whenever its activities or completion requirements change. This prevents an older completion record from incorrectly completing revised material.
+
+Use controlled lowercase values for `categories` and `topics`. `difficulty` must be `beginner`, `intermediate` or `advanced`; `status` must be `draft`, `published`, `coming-soon` or `archived`. Use categories for broad areas such as `technology` or `games`, topics for subjects such as `programming` or `unity`, and the difficulty field rather than a difficulty tag. Further-study links must use HTTPS and should favour authoritative, stable sources.
 
 ## Lesson schema
 
@@ -181,4 +199,4 @@ To add a course, create its directories and manifests, then add one `{ "id", "ma
 - Do not put answers only in an explanation or write ambiguous trick questions.
 - Do not modify `index.html`, CSS or JavaScript when adding content.
 
-Before publishing, parse every JSON file, follow every manifest and Markdown path, check ID uniqueness and answer formats, and proofread each activity against its lesson.
+Before publishing, run `node scripts/validate-content.js`. It parses every JSON file, follows manifest and Markdown paths, checks required metadata, ID uniqueness, supported activity formats and further-study URLs. Also proofread each activity against its lesson.

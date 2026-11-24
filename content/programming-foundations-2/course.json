@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "id": "programming-foundations-2",
+  "title": "Programming Foundations II",
+  "description": "Structure larger programs with collections, data models, modules, files, errors and automated tests.",
+  "overview": "This course moves from isolated instructions to maintainable small applications. You will model related data, use collections, understand classes and objects, handle expected failures, separate code into modules, persist information and use tests and version control. Examples remain language-neutral so the ideas transfer to C#, C++, Python and other languages.",
+  "categories": ["technology"],
+  "topics": ["programming", "data structures", "object-oriented programming", "testing", "version control"],
+  "difficulty": "intermediate",
+  "series": { "id": "programming-foundations", "part": 2, "label": "II" },
+  "estimatedMinutes": 90,
+  "prerequisites": ["Programming Foundations I"],
+  "tools": ["text editor", "programming language runtime", "Git"],
+  "status": "published",
+  "furtherStudy": [
+    { "title": "Pro Git", "url": "https://git-scm.com/book/en/v2", "description": "A complete, freely available guide to Git and collaborative version control." },
+    { "title": "C# language documentation", "url": "https://learn.microsoft.com/en-us/dotnet/csharp/", "description": "Apply the course concepts using Microsoft's C# tutorials and reference." }
+  ],
+  "chapters": [
+    { "id": "collections-and-models", "manifest": "01-collections-and-models/chapter.json" },
+    { "id": "classes-and-objects", "manifest": "02-classes-and-objects/chapter.json" },
+    { "id": "errors-files-and-modules", "manifest": "03-errors-files-and-modules/chapter.json" },
+    { "id": "tests-version-control-project", "manifest": "04-tests-version-control-project/chapter.json" }
+  ]
+}

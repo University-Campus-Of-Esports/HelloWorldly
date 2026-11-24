@@ -2,6 +2,18 @@
   "schemaVersion": 1,
   "courses": [
     {
+      "id": "programming-foundations-1",
+      "manifest": "programming-foundations-1/course.json"
+    },
+    {
+      "id": "programming-foundations-2",
+      "manifest": "programming-foundations-2/course.json"
+    },
+    {
+      "id": "programming-foundations-3",
+      "manifest": "programming-foundations-3/course.json"
+    },
+    {
       "id": "ai-fundamentals",
       "manifest": "ai-fundamentals/course.json"
     },

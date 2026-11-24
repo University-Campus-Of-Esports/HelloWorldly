@@ -3,7 +3,7 @@
   "title": "Gameplay Classes",
   "description": "Build Unreal-aware classes and interact safely with engine objects.",
   "lessons": [
-    { "id": "cpp-4-1", "title": "Classes and Actors", "file": "lesson-4-1.json" },
-    { "id": "cpp-4-2", "title": "Object References and Safety", "file": "lesson-4-2.json" }
+    { "id": "cpp-4-1", "title": "Classes and Actors", "file": "lesson-4-1.json", "version": 1, "estimatedMinutes": 10 },
+    { "id": "cpp-4-2", "title": "Object References and Safety", "file": "lesson-4-2.json", "version": 1, "estimatedMinutes": 10 }
   ]
 }

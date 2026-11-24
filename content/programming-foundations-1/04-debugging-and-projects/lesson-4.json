@@ -1,0 +1,41 @@
+{
+  "id": "pf1-4",
+  "title": "Debug, Test and Build",
+  "introduction": "Errors are normal; a repeatable debugging process turns unexpected behaviour into evidence.",
+  "content": "lesson-4.md",
+  "learningOutcomes": [
+    "Distinguish syntax, runtime and logic errors.",
+    "Use small test cases to locate a defect.",
+    "Plan a small project with requirements and acceptance checks."
+  ],
+  "activities": [
+    {
+      "id": "pf1-4-a1",
+      "type": "multiple-choice",
+      "question": "A program runs but calculates the wrong total. What kind of problem is most likely?",
+      "options": ["A logic error", "A missing computer", "A syntax highlight", "A file name"],
+      "correctIndex": 0,
+      "explanation": "A logic error allows the program to run but produces incorrect behaviour."
+    },
+    {
+      "id": "pf1-4-a2",
+      "type": "ordering",
+      "question": "Put this debugging process in a useful order.",
+      "items": [
+        { "id": "pf1-fix", "text": "Make one focused change" },
+        { "id": "pf1-reproduce", "text": "Reproduce the problem" },
+        { "id": "pf1-verify", "text": "Run the test again" },
+        { "id": "pf1-observe", "text": "Inspect relevant values" }
+      ],
+      "correctOrder": ["pf1-reproduce", "pf1-observe", "pf1-fix", "pf1-verify"],
+      "explanation": "First reproduce and observe the defect, then make a focused change and verify it."
+    },
+    {
+      "id": "pf1-4-a3",
+      "type": "true-false",
+      "question": "A useful project requirement can be checked as pass or fail.",
+      "correct": true,
+      "explanation": "Testable acceptance checks make it clear whether the project meets its requirements."
+    }
+  ]
+}

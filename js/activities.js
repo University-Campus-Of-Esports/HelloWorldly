@@ -23,7 +23,7 @@
     return button;
   }
 
-  function renderChoice(activity, container, choices, correctIndex) {
+  function renderChoice(activity, container, choices, correctIndex, lessonId, lessonVersion) {
     const fieldset = element("fieldset");
     fieldset.append(element("legend", "", activity.question));
     choices.forEach((choice, index) => {
@@ -37,28 +37,30 @@
       const selected = fieldset.querySelector("input:checked");
       if (!selected) { feedback(container, false); return; }
       const correct = Number(selected.value) === correctIndex;
-      if (correct) Progress.completeActivity(activity.id);
+      if (correct) Progress.completeActivity(activity.id, lessonId, lessonVersion);
       feedback(container, correct, activity.explanation);
       if (correct) container.dispatchEvent(new CustomEvent("activitycomplete", { bubbles: true }));
     }));
   }
 
-  function renderFill(activity, container) {
+  function renderFill(activity, container, lessonId, lessonVersion) {
     const label = element("label", "question", activity.question);
     const input = element("input", "text-answer");
     input.type = "text"; input.id = `${activity.id}-answer`; input.autocomplete = "off";
     label.htmlFor = input.id;
     const normalise = value => value.trim().replace(/\s+/g, " ").toLocaleLowerCase("en-GB");
     container.append(label, input);
-    container.append(checkButton(() => {
+    const check = () => {
       const correct = activity.acceptedAnswers.some(answer => normalise(answer) === normalise(input.value));
-      if (correct) Progress.completeActivity(activity.id);
+      if (correct) Progress.completeActivity(activity.id, lessonId, lessonVersion);
       feedback(container, correct, activity.explanation);
       if (correct) container.dispatchEvent(new CustomEvent("activitycomplete", { bubbles: true }));
-    }));
+    };
+    container.append(checkButton(check));
+    input.addEventListener("keydown", event => { if (event.key === "Enter") check(); });
   }
 
-  function renderOrdering(activity, container) {
+  function renderOrdering(activity, container, lessonId, lessonVersion) {
     const question = element("p", "question", activity.question);
     const list = element("ol", "ordering-list");
     activity.items.forEach(item => {
@@ -74,22 +76,22 @@
     container.append(checkButton(() => {
       const answer = Array.from(list.children, item => item.dataset.id);
       const correct = answer.every((id, index) => id === activity.correctOrder[index]);
-      if (correct) Progress.completeActivity(activity.id);
+      if (correct) Progress.completeActivity(activity.id, lessonId, lessonVersion);
       feedback(container, correct, activity.explanation);
       if (correct) container.dispatchEvent(new CustomEvent("activitycomplete", { bubbles: true }));
     }));
   }
 
-  function render(activity) {
+  function render(activity, lessonId, lessonVersion) {
     const container = element("section", "activity");
     container.dataset.activityId = activity.id;
     const typeLabel = ({ "multiple-choice": "Multiple choice", "true-false": "True or false", "fill-blank": "Fill in the blank", ordering: "Put in order" })[activity.type];
     container.append(element("p", "eyebrow", typeLabel));
-    if (activity.type === "multiple-choice") renderChoice(activity, container, activity.options, activity.correctIndex);
-    else if (activity.type === "true-false") renderChoice(activity, container, ["True", "False"], activity.correct ? 0 : 1);
-    else if (activity.type === "fill-blank") renderFill(activity, container);
-    else if (activity.type === "ordering") renderOrdering(activity, container);
-    if (Progress.isActivityComplete(activity.id)) feedback(container, true, activity.explanation);
+    if (activity.type === "multiple-choice") renderChoice(activity, container, activity.options, activity.correctIndex, lessonId, lessonVersion);
+    else if (activity.type === "true-false") renderChoice(activity, container, ["True", "False"], activity.correct ? 0 : 1, lessonId, lessonVersion);
+    else if (activity.type === "fill-blank") renderFill(activity, container, lessonId, lessonVersion);
+    else if (activity.type === "ordering") renderOrdering(activity, container, lessonId, lessonVersion);
+    if (Progress.isActivityComplete(activity.id, lessonVersion)) feedback(container, true, activity.explanation);
     return container;
   }
 

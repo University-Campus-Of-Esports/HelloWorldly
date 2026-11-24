@@ -1,0 +1,8 @@
+{
+  "id": "values-and-expressions",
+  "title": "Values and Expressions",
+  "description": "Store information, choose suitable types and calculate new values.",
+  "lessons": [
+    { "id": "pf1-2", "title": "Variables, Types and Expressions", "file": "lesson-2.json", "version": 1, "estimatedMinutes": 20 }
+  ]
+}

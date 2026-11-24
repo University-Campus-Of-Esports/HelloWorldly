@@ -1,0 +1,8 @@
+{
+  "id": "architecture-and-design",
+  "title": "Architecture and Design",
+  "description": "Create boundaries that keep policy independent from volatile details.",
+  "lessons": [
+    { "id": "pf3-2", "title": "Dependencies and Change", "file": "lesson-2.json", "version": 1, "estimatedMinutes": 25 }
+  ]
+}

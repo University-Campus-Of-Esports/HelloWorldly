@@ -1,0 +1,12 @@
+{
+  "id": "pf3-3",
+  "title": "External Systems and Safe Data",
+  "introduction": "Network APIs introduce latency, partial failure and untrusted data.",
+  "content": "lesson-3.md",
+  "learningOutcomes": ["Describe a request-response API interaction.", "Explain why asynchronous work must handle failure and cancellation.", "Apply basic validation, least-privilege and secret-handling rules."],
+  "activities": [
+    { "id": "pf3-3-a1", "type": "multiple-choice", "question": "Where should an API key normally be stored?", "options": ["In protected configuration outside committed source", "Inside a public repository", "In a lesson screenshot", "In every error message"], "correctIndex": 0, "explanation": "Secrets should be supplied through protected configuration and never committed or exposed to users." },
+    { "id": "pf3-3-a2", "type": "true-false", "question": "A successful network request is guaranteed to complete immediately.", "correct": false, "explanation": "Networks have latency and may time out, disconnect or return an error." },
+    { "id": "pf3-3-a3", "type": "multiple-choice", "question": "What does least privilege mean?", "options": ["Grant only the permissions required for the task", "Grant administrator access by default", "Trust every input", "Disable validation"], "correctIndex": 0, "explanation": "Limiting permissions reduces the damage possible from mistakes or compromise." }
+  ]
+}

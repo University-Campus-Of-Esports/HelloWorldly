@@ -1,0 +1,8 @@
+{
+  "id": "control-and-functions",
+  "title": "Control Flow and Functions",
+  "description": "Make decisions, repeat work and organise reusable behaviour.",
+  "lessons": [
+    { "id": "pf1-3", "title": "Branches, Loops and Functions", "file": "lesson-3.json", "version": 1, "estimatedMinutes": 20 }
+  ]
+}

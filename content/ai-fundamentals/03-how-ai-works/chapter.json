@@ -3,7 +3,7 @@
   "title": "How Does AI Work?",
   "description": "Explore training data, models, neural networks and language generation.",
   "lessons": [
-    { "id": "ai-3-1", "title": "Data and Training", "file": "lesson-3-1.json" },
-    { "id": "ai-3-2", "title": "Neural Networks and Large Language Models", "file": "lesson-3-2.json" }
+    { "id": "ai-3-1", "title": "Data and Training", "file": "lesson-3-1.json", "version": 1, "estimatedMinutes": 10 },
+    { "id": "ai-3-2", "title": "Neural Networks and Large Language Models", "file": "lesson-3-2.json", "version": 1, "estimatedMinutes": 10 }
   ]
 }

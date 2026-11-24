@@ -1,0 +1,12 @@
+{
+  "id": "pf2-3",
+  "title": "Reliable Boundaries",
+  "introduction": "Files, user input and external modules are boundaries where programs must expect failure.",
+  "content": "lesson-3.md",
+  "learningOutcomes": ["Validate data at system boundaries.", "Handle recoverable errors without hiding defects.", "Separate code into cohesive modules."],
+  "activities": [
+    { "id": "pf2-3-a1", "type": "multiple-choice", "question": "Where should untrusted file data first be validated?", "options": ["At the boundary where it enters the program", "Only after every calculation", "Inside an unrelated display function", "Nowhere"], "correctIndex": 0, "explanation": "Early boundary validation prevents invalid data from spreading through the program." },
+    { "id": "pf2-3-a2", "type": "true-false", "question": "Catching every error and silently ignoring it makes a program reliable.", "correct": false, "explanation": "Silent handling hides defects and leaves users and developers without useful evidence." },
+    { "id": "pf2-3-a3", "type": "fill-blank", "question": "A cohesive source-code unit with a clear public interface is commonly called a ___.", "acceptedAnswers": ["module"], "explanation": "A module groups related code and exposes selected operations to the rest of the program." }
+  ]
+}

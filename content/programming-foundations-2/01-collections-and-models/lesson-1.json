@@ -1,0 +1,12 @@
+{
+  "id": "pf2-1",
+  "title": "Collections and Data Modelling",
+  "introduction": "Collections store many related values, while a data model describes what those values mean together.",
+  "content": "lesson-1.md",
+  "learningOutcomes": ["Choose between sequence, set and key-value collections.", "Trace common collection operations.", "Model a small domain using related fields and constraints."],
+  "activities": [
+    { "id": "pf2-1-a1", "type": "multiple-choice", "question": "Which collection best maps a unique username to a profile?", "options": ["A key-value map", "An unordered pile with duplicates", "One Boolean", "One number"], "correctIndex": 0, "explanation": "A map retrieves a value using a unique key such as a username." },
+    { "id": "pf2-1-a2", "type": "true-false", "question": "A set is useful when each value should occur at most once.", "correct": true, "explanation": "Sets model membership and prevent duplicate values." },
+    { "id": "pf2-1-a3", "type": "fill-blank", "question": "A collection whose elements have a stable position is commonly called a ___.", "acceptedAnswers": ["sequence", "list"], "explanation": "Lists and other sequences retain an order and normally support position-based access." }
+  ]
+}

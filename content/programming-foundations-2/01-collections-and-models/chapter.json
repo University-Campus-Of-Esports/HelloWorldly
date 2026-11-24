@@ -1,0 +1,8 @@
+{
+  "id": "collections-and-models",
+  "title": "Collections and Data Models",
+  "description": "Represent groups of values and turn requirements into coherent data.",
+  "lessons": [
+    { "id": "pf2-1", "title": "Collections and Data Modelling", "file": "lesson-1.json", "version": 1, "estimatedMinutes": 20 }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "id": "pf3-1",
+  "title": "Cost, Search and Recursion",
+  "introduction": "Two correct algorithms can behave very differently as their input grows.",
+  "content": "lesson-1.md",
+  "learningOutcomes": ["Compare constant, linear and quadratic growth.", "Explain the requirement for binary search.", "Identify a recursive base case and progress step."],
+  "activities": [
+    { "id": "pf3-1-a1", "type": "multiple-choice", "question": "Which search requires the data to be ordered?", "options": ["Binary search", "A linear scan", "Reading the first element", "Checking a Boolean"], "correctIndex": 0, "explanation": "Binary search discards ordered halves, so it depends on an ordering invariant." },
+    { "id": "pf3-1-a2", "type": "true-false", "question": "A recursive algorithm needs a base case that stops further calls.", "correct": true, "explanation": "Without a reachable base case, recursion continues until resources are exhausted." },
+    { "id": "pf3-1-a3", "type": "multiple-choice", "question": "Which growth is usually preferable for large inputs?", "options": ["Linear rather than quadratic", "Quadratic rather than constant", "Any growth because size never matters", "Repeated full scans rather than one scan"], "correctIndex": 0, "explanation": "Linear work grows in direct proportion to input size, while quadratic work grows much faster." }
+  ]
+}

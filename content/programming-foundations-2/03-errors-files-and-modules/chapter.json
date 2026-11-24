@@ -1,0 +1,8 @@
+{
+  "id": "errors-files-and-modules",
+  "title": "Errors, Files and Modules",
+  "description": "Handle expected failures, persist data and organise source code.",
+  "lessons": [
+    { "id": "pf2-3", "title": "Reliable Boundaries", "file": "lesson-3.json", "version": 1, "estimatedMinutes": 20 }
+  ]
+}

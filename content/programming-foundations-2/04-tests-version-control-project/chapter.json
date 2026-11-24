@@ -1,0 +1,8 @@
+{
+  "id": "tests-version-control-project",
+  "title": "Testing, Version Control and a Project",
+  "description": "Protect behaviour with automated checks and small recorded changes.",
+  "lessons": [
+    { "id": "pf2-4", "title": "Build with Confidence", "file": "lesson-4.json", "version": 1, "estimatedMinutes": 25 }
+  ]
+}

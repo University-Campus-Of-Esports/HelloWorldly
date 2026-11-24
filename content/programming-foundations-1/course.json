@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "id": "programming-foundations-1",
+  "title": "Programming Foundations I",
+  "description": "Start from first principles: solve problems, represent data, control program flow and debug small programs.",
+  "overview": "This language-neutral introduction explains how programmers turn a problem into precise steps. You will practise reading pseudocode, working with values, making decisions, repeating work, using functions and finding defects. No previous programming experience is required. The final chapter helps you plan and test a small first project.",
+  "categories": ["technology"],
+  "topics": ["programming", "algorithms", "debugging", "problem solving"],
+  "difficulty": "beginner",
+  "series": { "id": "programming-foundations", "part": 1, "label": "I" },
+  "estimatedMinutes": 80,
+  "prerequisites": [],
+  "tools": ["text editor", "optional Python interpreter"],
+  "status": "published",
+  "furtherStudy": [
+    { "title": "The Python Tutorial", "url": "https://docs.python.org/3/tutorial/", "description": "Apply these ideas in a beginner-friendly general-purpose language." },
+    { "title": "Pro Git — Getting Started", "url": "https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control", "description": "Learn why programmers use version control to protect and share work." }
+  ],
+  "chapters": [
+    { "id": "programs-and-problems", "manifest": "01-programs-and-problems/chapter.json" },
+    { "id": "values-and-expressions", "manifest": "02-values-and-expressions/chapter.json" },
+    { "id": "control-and-functions", "manifest": "03-control-and-functions/chapter.json" },
+    { "id": "debugging-and-projects", "manifest": "04-debugging-and-projects/chapter.json" }
+  ]
+}

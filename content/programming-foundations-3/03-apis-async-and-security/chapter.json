@@ -1,0 +1,8 @@
+{
+  "id": "apis-async-and-security",
+  "title": "APIs, Asynchronous Work and Security",
+  "description": "Communicate across boundaries without blocking or trusting input.",
+  "lessons": [
+    { "id": "pf3-3", "title": "External Systems and Safe Data", "file": "lesson-3.json", "version": 1, "estimatedMinutes": 25 }
+  ]
+}

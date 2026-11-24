@@ -3,6 +3,19 @@
   "id": "ai-fundamentals",
   "title": "AI Fundamentals",
   "description": "A beginner-friendly introduction to artificial intelligence, how it works and how to use it responsibly.",
+  "overview": "This course builds practical AI literacy. You will learn what AI systems do, how models learn from data, where common systems can fail, and how to use generated output critically and responsibly. It is designed for learners with no technical background and prepares you for more practical study of machine learning or generative AI.",
+  "categories": ["technology", "artificial intelligence"],
+  "topics": ["ai literacy", "machine learning", "generative ai", "responsible ai"],
+  "difficulty": "beginner",
+  "series": { "id": "ai-foundations", "part": 1, "label": "I" },
+  "estimatedMinutes": 80,
+  "prerequisites": [],
+  "tools": ["web browser"],
+  "status": "published",
+  "furtherStudy": [
+    { "title": "Google Machine Learning Crash Course", "url": "https://developers.google.com/machine-learning/crash-course", "description": "A practical next step into machine-learning concepts and exercises." },
+    { "title": "OECD AI Principles", "url": "https://oecd.ai/en/ai-principles", "description": "International principles for trustworthy and responsible AI." }
+  ],
   "chapters": [
     { "id": "what-is-ai", "manifest": "01-what-is-ai/chapter.json" },
     { "id": "types-of-ai", "manifest": "02-types-of-ai/chapter.json" },

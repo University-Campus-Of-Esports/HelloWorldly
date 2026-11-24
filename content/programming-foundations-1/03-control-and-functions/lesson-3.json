@@ -1,0 +1,35 @@
+{
+  "id": "pf1-3",
+  "title": "Branches, Loops and Functions",
+  "introduction": "Control flow determines which instructions run, how often they run and how behaviour is reused.",
+  "content": "lesson-3.md",
+  "learningOutcomes": [
+    "Use conditions to select behaviour.",
+    "Choose between count-controlled and condition-controlled loops.",
+    "Describe parameters, return values and function responsibilities."
+  ],
+  "activities": [
+    {
+      "id": "pf1-3-a1",
+      "type": "multiple-choice",
+      "question": "Which structure is best when an action must run exactly ten times?",
+      "options": ["A count-controlled loop", "A single if statement", "A constant", "A text value"],
+      "correctIndex": 0,
+      "explanation": "A count-controlled loop expresses a known number of repetitions directly."
+    },
+    {
+      "id": "pf1-3-a2",
+      "type": "true-false",
+      "question": "A function should ideally have one clear responsibility.",
+      "correct": true,
+      "explanation": "Focused functions are easier to name, test, reuse and change."
+    },
+    {
+      "id": "pf1-3-a3",
+      "type": "fill-blank",
+      "question": "A value supplied to a function through its definition is received by a ___.",
+      "acceptedAnswers": ["parameter"],
+      "explanation": "A parameter is a named input in a function definition."
+    }
+  ]
+}

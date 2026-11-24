@@ -1,0 +1,40 @@
+{
+  "id": "pf1-1",
+  "title": "From Problems to Algorithms",
+  "introduction": "Programming begins before code: first define the problem and describe a sequence of unambiguous steps.",
+  "content": "lesson-1.md",
+  "learningOutcomes": [
+    "Identify a program's inputs, processing and outputs.",
+    "Describe an algorithm in plain language or pseudocode.",
+    "Break a broad problem into smaller testable tasks."
+  ],
+  "activities": [
+    {
+      "id": "pf1-1-a1",
+      "type": "ordering",
+      "question": "Put the basic stages of a simple program in order.",
+      "items": [
+        { "id": "pf1-output", "text": "Present the result" },
+        { "id": "pf1-input", "text": "Receive input" },
+        { "id": "pf1-process", "text": "Process the data" }
+      ],
+      "correctOrder": ["pf1-input", "pf1-process", "pf1-output"],
+      "explanation": "A simple program receives input, processes it and then produces output."
+    },
+    {
+      "id": "pf1-1-a2",
+      "type": "multiple-choice",
+      "question": "Which instruction is least ambiguous?",
+      "options": ["Sort the scores from lowest to highest", "Make the scores look right", "Handle the data somehow", "Do the useful calculation"],
+      "correctIndex": 0,
+      "explanation": "An algorithm must state actions precisely enough that they can be followed consistently."
+    },
+    {
+      "id": "pf1-1-a3",
+      "type": "true-false",
+      "question": "Decomposition means dividing a large problem into smaller tasks.",
+      "correct": true,
+      "explanation": "Small tasks are easier to understand, implement and test independently."
+    }
+  ]
+}

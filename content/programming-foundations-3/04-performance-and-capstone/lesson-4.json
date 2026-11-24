@@ -1,0 +1,12 @@
+{
+  "id": "pf3-4",
+  "title": "Measure, Deliver and Reflect",
+  "introduction": "A capstone demonstrates judgement across requirements, design, implementation, testing and delivery.",
+  "content": "lesson-4.md",
+  "learningOutcomes": ["Use measurements to locate a performance bottleneck.", "Define a capstone with functional and quality requirements.", "Evaluate a project using evidence and documented trade-offs."],
+  "activities": [
+    { "id": "pf3-4-a1", "type": "ordering", "question": "Order a responsible optimisation cycle.", "items": [{ "id": "pf3-change", "text": "Make one targeted change" }, { "id": "pf3-measure", "text": "Measure representative behaviour" }, { "id": "pf3-verify", "text": "Verify correctness and measure again" }, { "id": "pf3-target", "text": "Identify the significant bottleneck" }], "correctOrder": ["pf3-measure", "pf3-target", "pf3-change", "pf3-verify"], "explanation": "Evidence identifies the bottleneck; a targeted change must then be checked for correctness and impact." },
+    { "id": "pf3-4-a2", "type": "true-false", "question": "A capstone should document limitations and trade-offs as well as successful features.", "correct": true, "explanation": "Honest evaluation demonstrates engineering judgement and guides future work." },
+    { "id": "pf3-4-a3", "type": "multiple-choice", "question": "Which is a measurable quality requirement?", "options": ["A search result appears within one second for the target dataset", "The application feels good", "The code is perfect", "Every possible feature is included"], "correctIndex": 0, "explanation": "A measurable threshold and defined context make the requirement testable." }
+  ]
+}

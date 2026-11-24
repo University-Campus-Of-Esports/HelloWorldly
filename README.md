@@ -6,7 +6,7 @@ Short, interactive lessons for learning technical subjects one step at a time.
 
 [View the live site](https://university-campus-of-esports.github.io/HelloWorldly/) · [Create course content](CONTENT_GUIDE.md) · [Report an issue](https://github.com/University-Campus-Of-Esports/HelloWorldly/issues)
 
-HelloWordly is a mobile-first learning app built for concise explanations and hands-on activities. The included **AI Fundamentals** course introduces artificial intelligence through eight beginner-friendly lessons across four chapters.
+HelloWordly is a mobile-first learning app built for concise explanations and hands-on activities. It includes structured **Programming Foundations I–III**, **AI Fundamentals**, **Unity C# Essentials** and **Unreal C++ Essentials** courses.
 
 The app runs entirely in the browser. There are no accounts, runtime dependencies, external APIs, or build tools, and learning progress stays on the user's device.
 
@@ -16,6 +16,9 @@ The app runs entirely in the browser. There are no accounts, runtime dependencie
 - Practise with multiple-choice, true-or-false, fill-in-the-blank, and ordering activities.
 - Get immediate feedback, retry activities, and track lesson and course completion.
 - Resume where you left off with progress saved in browser storage.
+- Search and filter courses by category, topic and difficulty.
+- See course prerequisites, tools, time estimates and curated further-study links.
+- Follow numbered learning pathways from beginner through advanced material.
 - Navigate by keyboard and use visible focus states and semantic controls.
 - Share or refresh lesson URLs without losing your place.
 
@@ -51,6 +54,7 @@ To add content:
 1. Add a lesson's JSON metadata and Markdown content to a chapter directory.
 2. Register the lesson in the chapter's `chapter.json` manifest.
 3. Register new chapters in `course.json` and new courses in `content/courses.json`.
+4. Run `node scripts/validate-content.js` before publishing.
 
 See the [content authoring guide](CONTENT_GUIDE.md) for schemas and examples. The [content prompt](CONTENT_PROMPT.md) is also available as a reusable brief for generating a complete chapter with an AI assistant.
 
@@ -60,6 +64,7 @@ See the [content authoring guide](CONTENT_GUIDE.md) for schemas and examples. Th
 ├── .github/workflows/   # GitHub Pages deployment
 ├── content/             # Course, chapter, and lesson content
 ├── js/                  # Navigation, activities, content, and progress logic
+├── scripts/             # Content validation
 ├── index.html           # Application shell
 └── style.css            # Responsive interface and theme
 ```
@@ -93,4 +98,4 @@ If you are proposing a substantial feature or content change, open an issue firs
 
 - Progress is specific to one browser and device and is removed when site storage is cleared.
 - Activities use fixed answers; the app does not execute code or use AI-based assessment.
-- There is currently no account synchronisation, search, or offline mode.
+- There is currently no account synchronisation or offline mode.

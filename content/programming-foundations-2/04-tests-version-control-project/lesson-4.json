@@ -1,0 +1,12 @@
+{
+  "id": "pf2-4",
+  "title": "Build with Confidence",
+  "introduction": "Automated tests and version control make change visible, repeatable and reversible.",
+  "content": "lesson-4.md",
+  "learningOutcomes": ["Arrange a focused automated test.", "Explain commits and branches.", "Plan an intermediate project in small verified increments."],
+  "activities": [
+    { "id": "pf2-4-a1", "type": "ordering", "question": "Order the common parts of a focused test.", "items": [{ "id": "pf2-assert", "text": "Assert the expected result" }, { "id": "pf2-act", "text": "Act by running the behaviour" }, { "id": "pf2-arrange", "text": "Arrange the inputs and state" }], "correctOrder": ["pf2-arrange", "pf2-act", "pf2-assert"], "explanation": "A focused test arranges its context, acts once, then asserts an observable result." },
+    { "id": "pf2-4-a2", "type": "multiple-choice", "question": "What should a useful commit usually contain?", "options": ["One coherent change with a descriptive message", "Every unrelated edit from the month", "Only generated files", "No explanation"], "correctIndex": 0, "explanation": "Small coherent commits are easier to review, understand and reverse." },
+    { "id": "pf2-4-a3", "type": "true-false", "question": "Tests should include important boundary and failure cases as well as normal cases.", "correct": true, "explanation": "Boundaries and expected failures often reveal assumptions that happy-path examples miss." }
+  ]
+}

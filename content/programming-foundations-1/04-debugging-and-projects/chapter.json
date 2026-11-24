@@ -1,0 +1,8 @@
+{
+  "id": "debugging-and-projects",
+  "title": "Debugging and a First Project",
+  "description": "Find defects systematically and combine the fundamentals into a small project.",
+  "lessons": [
+    { "id": "pf1-4", "title": "Debug, Test and Build", "file": "lesson-4.json", "version": 1, "estimatedMinutes": 20 }
+  ]
+}

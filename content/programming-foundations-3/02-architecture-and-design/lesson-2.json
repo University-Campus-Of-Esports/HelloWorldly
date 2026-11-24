@@ -1,0 +1,12 @@
+{
+  "id": "pf3-2",
+  "title": "Dependencies and Change",
+  "introduction": "Architecture manages how a system can change by controlling responsibilities and dependencies.",
+  "content": "lesson-2.md",
+  "learningOutcomes": ["Distinguish policy from implementation detail.", "Use dependency inversion at an external boundary.", "Recognise coupling and cohesion trade-offs."],
+  "activities": [
+    { "id": "pf3-2-a1", "type": "multiple-choice", "question": "Which module should usually contain the rule for calculating an order total?", "options": ["A domain or core module", "A button-drawing module", "A database driver", "A deployment script"], "correctIndex": 0, "explanation": "Core business rules should not depend on a particular interface or storage technology." },
+    { "id": "pf3-2-a2", "type": "true-false", "question": "High cohesion means a module's parts contribute to a focused responsibility.", "correct": true, "explanation": "Cohesive modules group behaviour that changes for related reasons." },
+    { "id": "pf3-2-a3", "type": "fill-blank", "question": "The degree to which modules depend on one another is called ___.", "acceptedAnswers": ["coupling"], "explanation": "Lower, deliberate coupling reduces the number of modules affected by a change." }
+  ]
+}

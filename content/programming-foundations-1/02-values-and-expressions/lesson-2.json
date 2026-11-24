@@ -1,0 +1,36 @@
+{
+  "id": "pf1-2",
+  "title": "Variables, Types and Expressions",
+  "introduction": "Programs name values, organise them by type and combine them with operators.",
+  "content": "lesson-2.md",
+  "learningOutcomes": [
+    "Distinguish variables, literals and constants.",
+    "Choose basic number, text and Boolean types.",
+    "Trace assignment and arithmetic expressions."
+  ],
+  "activities": [
+    {
+      "id": "pf1-2-a1",
+      "type": "multiple-choice",
+      "question": "Which type is most suitable for whether a player has a key?",
+      "options": ["Boolean", "Text", "Decimal number", "Collection"],
+      "correctIndex": 0,
+      "explanation": "A Boolean represents one of two logical states, commonly true or false."
+    },
+    {
+      "id": "pf1-2-a2",
+      "type": "fill-blank",
+      "question": "A named storage location whose value can change is a ___.",
+      "acceptedAnswers": ["variable"],
+      "explanation": "A variable gives a value a meaningful name and may be assigned a new value."
+    },
+    {
+      "id": "pf1-2-a3",
+      "type": "multiple-choice",
+      "question": "If score starts at 7 and then score = score + 3 runs, what is score?",
+      "options": ["10", "7", "3", "73"],
+      "correctIndex": 0,
+      "explanation": "The current value 7 is added to 3, and the result 10 is assigned back to score."
+    }
+  ]
+}

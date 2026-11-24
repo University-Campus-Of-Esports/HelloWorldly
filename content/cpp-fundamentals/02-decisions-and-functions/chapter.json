@@ -3,7 +3,7 @@
   "title": "Decisions and Functions",
   "description": "Control what code runs and organise behaviour into reusable functions.",
   "lessons": [
-    { "id": "cpp-2-1", "title": "Branches and Loops", "file": "lesson-2-1.json" },
-    { "id": "cpp-2-2", "title": "Writing Functions", "file": "lesson-2-2.json" }
+    { "id": "cpp-2-1", "title": "Branches and Loops", "file": "lesson-2-1.json", "version": 1, "estimatedMinutes": 10 },
+    { "id": "cpp-2-2", "title": "Writing Functions", "file": "lesson-2-2.json", "version": 1, "estimatedMinutes": 10 }
   ]
 }
